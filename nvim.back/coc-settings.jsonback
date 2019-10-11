@@ -1,0 +1,163 @@
+{
+"suggest.triggerAfterInsertEnter": false,
+    "suggest.timeout": 5000,
+    "suggest.noselect": false,
+    "suggest.detailField":"preview",
+    "suggest.snippetIndicator": "🌟",
+    "suggest.triggerCompletionWait": 100,
+    "suggest.echodocSupport": true,
+    "suggest.completionItemKindLabels": {
+        "keyword": "\uf1de",
+        "variable": "\ue79b",
+        "value": "\uf89f",
+        "operator": "\u03a8",
+        "function": "\u2A15",
+        "reference": "\ufa46",
+        "constant": "\uf8fe",
+        "method": "\uf09a",
+        "struct": "\ufb44",
+        "class": "\uf0e8",
+        "interface": "\uf417",
+        "text": "\u2663",
+        "enum": "\uf435",
+        "enumMember": "\uf02b",
+        "module": "\uf530",
+        "color": "\ue22b",
+        "property": "\ue624",
+        "field": "\uf6a6",
+        "unit": "\uf475",
+        "event": "\ufacd",
+        "file": "\uf723",
+        "folder": "\uf114",
+        "snippet": "\ue60b",
+        "typeParameter": "\uf728",
+        "default": "\uf29c"
+    },
+    //diagnostic
+    "diagnostic.signOffset": 9999999,
+	"diagnostic.errorSign": "●",
+	"diagnostic.warningSign": "●",
+    "diagnostic.displayByAle": false,
+    "diagnostic.refreshOnInsertMode": true,
+    //git
+    "git.enableGutters": true,
+    "git.branchCharacter":"\uf408",
+    "git.addGlameToBufferVar": true,
+    "git.addGlameToVirtualText": true,
+    "git.virtualTextPrefix": " ❯❯❯ ",
+    "git.addedSign.hlGroup": "GitGutterAdd",
+    "git.changedSign.hlGroup": "GitGutterChange",
+    "git.removedSign.hlGroup": "GitGutterDelete",
+    "git.topRemovedSign.hlGroup": "GitGutterDelete",
+    "git.changeRemovedSign.hlGroup": "GitGutterChangeDelete",
+    "git.addedSign.text":"▎",
+    "git.changedSign.text":"▎",
+    "git.removedSign.text":"▏",
+    "git.topRemovedSign.text": "▔",
+    "git.changeRemovedSign.text": "▋",
+    //Snippet
+    "coc.preferences.snippetStatusText": "Ⓢ ",
+    //prettier
+    "coc.preferences.formatOnSaveFiletypes": ["css","markdown"],
+    "prettier.statusItemText": "ⓟ ",
+    "prettier.eslintIntegration": true,
+    "prettier.tslintIntegration": true,
+    "prettier.stylelintIntegration": true,
+    //python
+   //"python.jediEnabled": false,
+	
+    "suggest.enablePreview": true,
+"languageserver": {
+    "lua": {
+    "command": "lua-lsp",
+	"filetypes": ["lua"]
+    },
+
+"python": {
+    "command": "python",
+    "args": [
+      "-mpyls",
+      "-vv",
+      "--log-file",
+      "/tmp/lsp_python.log"
+    ],
+    "trace.server": "verbose",
+    "filetypes": [
+      "python"
+    ],
+    "settings": {
+      "pyls": {
+        "enable": true,
+        "trace": {
+          "server": "verbose"
+        },
+        "commandPath": "",
+        "configurationSources": [
+          "pycodestyle"
+        ],
+        "plugins": {
+          "jedi_completion": {
+            "enabled": true
+          },
+          "jedi_hover": {
+            "enabled": true
+          },
+          "jedi_references": {
+            "enabled": true
+          },
+          "jedi_signature_help": {
+            "enabled": true
+          },
+          "jedi_symbols": {
+            "enabled": true,
+            "all_scopes": true
+          },
+          "mccabe": {
+            "enabled": true,
+            "threshold": 15
+          },
+          "preload": {
+            "enabled": true
+          },
+          "pycodestyle": {
+            "enabled": true
+          },
+          "pydocstyle": {
+            "enabled": false,
+            "match": "(?!test_).*\\.py",
+            "matchDir": "[^\\.].*"
+          },
+          "pyflakes": {
+            "enabled": true
+          },
+          "rope_completion": {
+            "enabled": true
+          },
+          "yapf": {
+            "enabled": true
+          },
+
+
+    "ccls": {
+      "command": "ccls",
+      "filetypes": ["c", "cpp"],
+      "rootPatterns": [".ccls", "compile_commands.json", ".vim/", ".git/", ".hg/"],
+      "initializationOptions": {
+		  "cache":{
+        "cacheDirectory": ".ccls-cache"
+      }
+	}
+
+	},
+	"rust": {
+    "command": "ra_lsp_server",
+    "filetypes": ["rust"],
+    "rootPatterns": ["Cargo.toml"]
+   						}
+  					}
+
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+sw_volume: 98
+audio_device_state:1:pulse audio
+audio_device_state:1:my_fifo
+state: play
+current: 4
+time: 630.243000
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 2
+mixrampdb: 0.000000
+mixrampdelay: -1.000000
+playlist_begin
+0:Maurice Ravel/02 Ma Mère L_Oie_ II. Laideronnette, Impératrice Des Pagodes.mp3
+1:Movies OST/blade runner/Vangelis - Blade Runner Soundtrack (Remastered 2017)-k3fz6CC45ok.mp3
+2:Movies OST/GITS/Ghost in the Shell Ambience - 6 Hour Long Ambient Edit, Compilation-aylxPWZOsDo.mp3
+song_begin: https://music.youtube.com/playlist?list=OLAK5uy_mrnj2r22D6_35cwuiDjlijGqkF-YbDVQ0
+song_end
+4:Maurice Ravel/Ravel - Le Tombeau de Couperin.m4a
+5:Prince/_-S6Y1gohk5-A.mp3
+6:Maurice Ravel/Maurice Ravel_ Ma mère l_Oye (suite).m4a
+playlist_end

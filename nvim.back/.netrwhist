@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/home/david/Downloads/vim.reaper-master/nvim'
+let g:netrw_dirhist_0='/home/david/Downloads/vim.reaper-master'
+let g:netrw_dirhist_9='/home/david/GitSource/st'
+let g:netrw_dirhist_8='/etc/portage/package.use'
+let g:netrw_dirhist_7='/etc/portage/make.profile'
+let g:netrw_dirhist_6='/etc/portage/package.use'
+let g:netrw_dirhist_5='/etc/portage/make.profile'
+let g:netrw_dirhist_4='/home/david/.config/qtile/__pycache__'
+let g:netrw_dirhist_3='/usr/share'
+let g:netrw_dirhist_2='/etc/portage/package.use'

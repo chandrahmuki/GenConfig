@@ -1,0 +1,224 @@
+5456be9cb627fd35b2f1d2743ff00454|file:///home/david/GitSource/slstatus/slstatus.c|25|13|V|c
+	BitmapPad(dpy)
+ea5a1cbe764918679997181a3ea281d3|file:///home/david/.config/nvim/coc-settings.json|80|5|V|jsonc
+	    }
+e82f3e56d2a6718da3f068e5e6f91343|file:///home/david/.config/nvim/coc-settings.json|79|5|V|jsonc
+	      }
+4e1ddba1c31545ee09fb38ae1fd79346|file:///home/david/.config/nvim/coc-settings.json|78|5|V|jsonc
+	        }
+ba281a5c22f2ced39d117e8624f8783a|file:///home/david/.config/nvim/coc-settings.json|77|1|V|jsonc
+		  }
+9b58049f70d05722e348456b0801b14d|file:///home/david/.config/nvim/coc-settings.json|1|1|v|jsonc
+	{
+	"languageserver": {
+	"ccls": {
+	"command": "ccls",
+	"filetypes": ["c", "cpp", "cuda", "objc", "objcpp"],
+	"rootPatterns": [".ccls", "compile_commands.json", ".vim/", ".git/", ".hg/"],
+	"initializationOptions": {
+	"cache": {
+	"directory": "/tmp/ccls-cache",
+	"retainInMemory": 1
+		
+	},
+	
+	"python": {
+	    "command": "python",
+	    "args": [
+	      "-mpyls",
+	      "-vv",
+	      "--log-file",
+	      "/tmp/lsp_python.log"
+	    ],
+	    "trace.server": "verbose",
+	    "filetypes": [
+	      "python"
+	    ],
+	    "settings": {
+	      "pyls": {
+	        "enable": true,
+	        "trace": {
+	          "server": "verbose"
+	        },
+	        "commandPath": "",
+	        "configurationSources": [
+	          "pycodestyle"
+	        ],
+	        "plugins": {
+	          "jedi_completion": {
+	            "enabled": true
+	          },
+	          "jedi_hover": {
+	            "enabled": true
+	          },
+	          "jedi_references": {
+	            "enabled": true
+	          },
+	          "jedi_signature_help": {
+	            "enabled": true
+	          },
+	          "jedi_symbols": {
+	            "enabled": true,
+	            "all_scopes": true
+	          },
+	          "mccabe": {
+	            "enabled": true,
+	            "threshold": 15
+	          },
+	          "preload": {
+	            "enabled": true
+	          },
+	          "pycodestyle": {
+	            "enabled": true
+	          },
+	          "pydocstyle": {
+	            "enabled": false,
+	            "match": "(?!test_).*\\.py",
+	            "matchDir": "[^\\.].*"
+	          },
+	          "pyflakes": {
+	            "enabled": true
+	          },
+	          "rope_completion": {
+	            "enabled": true
+	          },
+	          "yapf": {
+	            "enabled": true
+	          }
+			}
+		  }
+		}
+	}
+	}
+	}
+	}
+	}
+de893f4ba7fa7891ed43d4e7b01c8353|file:///home/david/.config/nvim/coc-settings.json|97|5|V|jsonc
+	  '';
+c0462b744a8c0b52c5b2360c060df359|file:///home/david/.config/nvim/coc-settings.json|2|37|V|jsonc
+		https://github.com/neoclide/coc.nvim
+c293dcae07c247641782f61703f0ed8d|file:///home/david/.config/nvim.back/init.vim|23|1|v|vim
+	Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+	Plug 'junegunn/fzf.vim'
+	
+ee54a0e35f3f0795e6269e9e46c9bc7c|file:///home/david/.config/nvim.back/init.vim|23|1|V|vim
+	Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+	Plug 'junegunn/fzf.vim'
+ff3420905f2b6d121b1018c106718fdc|file:///home/david/.config/nvim.back/init.vim|16|1|V|vim
+	Plug 'easymotion/vim-easymotion'
+46fcbf509b3909d2defa6eecf6ab27af|file:///home/david/.config/nvim/coc-settings.json|13|3|V|jsonc
+	  ""
+a7b48b088f0e889cfe478977380518ea|file:///home/david/.config/nvim/configs/plugin-settings.vim|379|1|V|vim
+	let g:fzf_layout = { 'down': '~40%' }
+6278591f63e1fa26cf1674687a87188e|file:///home/david/.config/nvim/configs/plugin-settings.vim|378|1|V|vim
+	" - down / up / left / right
+060cd923786146bac284f99d9e3dab4e|file:///home/david/.config/nvim/configs/plugin-settings.vim|377|1|V|vim
+	" Default fzf layout
+dd98b05f122f8102c5d6ee2ae915f31e|file:///home/david/.config/nvim.back/init.vim|340|1|v|vim
+	nnoremap <silent> <leader>fb :Buffers<CR>
+	nnoremap <silent> <leader>fc :Colors<CR>
+	nnoremap <silent> <leader>ff :Files<CR>
+	nnoremap <silent> <leader>fr :Rg<CR>
+	nnoremap <silent> <leader>fw :Rg <C-R><C-W>CR><>
+	
+	nnoremap <silent> <leader>f :FZF ~ <CR>
+	
+	
+2843e279ad33a77e62021e7011e080bf|file:///home/david/.config/nvim/configs/plugin-settings.vim|403|1|V|vim
+	nmap <leader>ff :Files<CR>
+9a027997de913d025e8da1de11ba3463|file:///home/david/.config/nvim/configs/plugin-settings.vim|408|1|V|vim
+	nnoremap <silent> <leader>fw :Rg <C-R><C-W>CR><>
+2d33f15d1e3842f3c27837c74118384d|file:///home/david/.config/nvim.back/init.vim|353|1|V|vim
+	nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
+82d0c0373011ad1626b7201c548e5ff6|file:///home/david/.config/qtile/config.py|122|1|v|python
+	floating_layout
+bd31fd19b24f9ce697c4396476e5dae1|file:///home/david/.config/qtile/config.py|33|1|V|python
+	MOD = "mod4"
+	
+	keys = [
+	    # Switch between windows in current stack pane
+	    Key([MOD], "k", lazy.layout.down()),
+	    Key([MOD], "j", lazy.layout.up()),
+	
+	    # Move windows up or down in current stack
+	    Key([MOD, "control"], "k", lazy.layout.shuffle_down()),
+	    Key([MOD, "control"], "j", lazy.layout.shuffle_up()),
+	    # Switch window focus to other pane(s) of stack
+	    Key([MOD], "space", lazy.layout.next()),
+	
+	    # Swap panes of split stack
+	    Key([MOD, "shift"], "space", lazy.layout.rotate()),
+	
+	    # Toggle between split and unsplit sides of stack.
+	    # Split = all windows displayed
+	    # Unsplit = 1 window displayed, like Max layout, but still with
+	    # multiple stack panes
+	    Key([MOD, "shift"], "Return", lazy.layout.toggle_split()),
+	    Key([MOD], "Return", lazy.spawn("kitty")),
+	    Key([MOD, "shift"], "p", lazy.spawn("rofi -show drun")),
+	    # Toggle between different layouts as defined below
+	    Key([MOD], "Tab", lazy.next_layout()),
+	    Key([MOD], "w", lazy.window.kill()),
+	
+	    Key([MOD, "control"], "r", lazy.restart()),
+	    Key([MOD, "control"], "q", lazy.shutdown()),
+	    Key([MOD], "r", lazy.spawncmd()),
+	]
+	
+	groups = [Group(i) for i in "1234567890"]
+	
+	for i in groups:
+	    keys.extend([
+	        # MOD1 + letter of group = switch to group
+	        Key([MOD], i.name, lazy.group[i.name].toscreen()),
+	
+	        # MOD1 + shift + letter of group = switch to & move focused
+	        # window to group
+	        Key([MOD, "shift"], i.name, lazy.window.togroup(i.name)),
+	    ])
+	kwargs = dict(margin=10, border_width=1)
+	layouts = [
+	    layout.MonadTall(**kwargs),
+	    layout.Stack(num_stacks=2),
+	    layout.Max(),
+	    layout.Bsp(**kwargs),
+	]
+	
+	widget_defaults = dict(
+	    font='sans',
+	    fontsize=18,
+	    padding=3,
+	)
+	extension_defaults = widget_defaults.copy()
+	
+	screens = [
+	    Screen(
+	        bottom=bar.Bar(
+	            [
+	                widget.GroupBox(),
+	                widget.Prompt(),
+	                widget.WindowName(),
+	                widget.TextBox("mugen config", name="Mugen"),
+	                widget.Systray(),
+	                widget.Clock(format='%Y-%m-%d %a %I:%M %p'),
+	            ],
+	            24,
+	        ),
+	    ),
+	]
+	
+	# Drag floating layouts.
+	mouse = [
+	    Drag([MOD], "Button1", lazy.window.set_position_floating(),
+	         start=lazy.window.get_position()),
+	    Drag([MOD], "Button3", lazy.window.set_size_floating(),
+	         start=lazy.window.get_size()),
+	    Click([MOD], "Button2", lazy.window.bring_to_front())
+	]
+	
+	dgroups_key_binder = None
+	dgroups_app_rules = []  # type: List
+	main = None
+	follow_mouse_focus = True
+	bring_front_click = False
+	cursor_warp = False
