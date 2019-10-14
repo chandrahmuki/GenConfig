@@ -26,9 +26,31 @@
 
 from libqtile.config import Key, Screen, Group, Drag, Click
 from libqtile.command import lazy
-from libqtile import layout, bar, widget
+from libqtile import layout, bar, widget, hook
 
 from typing import List  # noqa: F401
+
+@lazy.function
+def window_to_prev_group(qtile):
+    if qtile.currentWindow is not None:
+        i = qtile.groups.index(qtile.currentGroup)
+        qtile.currentWindow.togroup(qtile.groups[i - 1].name)
+
+@lazy.function
+def window_to_next_group(qtile):
+    if qtile.currentWindow is not None:
+        i = qtile.groups.index(qtile.currentGroup)
+        qtile.currentWindow.togroup(qtile.groups[i + 1].name)
+
+def app_or_group(group, app):
+    def f(qtile):
+        if qtile.groupMap[group].windows:
+            qtile.groupMap[group].cmd_toscreen()
+        else:
+            qtile.groupMap[group].cmd_toscreen()
+            qtile.cmd_spawn(app)
+    return f
+
 
 mod = "mod4"
 
@@ -63,47 +85,57 @@ keys = [
     Key([mod], "r", lazy.spawncmd()),
 ]
 
-groups = [Group(i) for i in "1234567890"]
 
-for i in groups:
-    keys.extend([
-        # mod1 + letter of group = switch to group
-        Key([mod], i.name, lazy.group[i.name].toscreen()),
 
-        # mod1 + shift + letter of group = switch to & move focused
-        # window to group
-        Key([mod, "shift"], i.name, lazy.window.togroup(i.name)),
-    ])
-kwargs = dict(margin=10, border_width=1)
-layouts = [
-    layout.MonadTall(**kwargs),
-    layout.Stack(num_stacks=2),
-    layout.Max(),
-    layout.Bsp(**kwargs)
-]
+def init_groups_name():
+    return [("1",{'label':"",'layout': 'max'}),
+            ("2",{'label':"爵",'layout': 'max'}),
+            ("3",{'label':"",'layout': 'floating'}),
+            ("4",{'label':"",'layout': 'max'}),
+            ("5",{'label':"",'layout': 'max'}),
+            ("6",{'label':"",'layout': 'bsp'})]
 
-widget_defaults = dict(
-    font='sans',
-    fontsize=18,
-    padding=3,
-)
-extension_defaults = widget_defaults.copy()
+def init_groups():
+    return [Group(name,**kwargs) for name , kwargs in gron]
 
-screens = [
-    Screen(
-        bottom=bar.Bar(
-            [
+
+
+def init_layouts():
+    return [
+            layout.MonadTall(),
+            layout.Stack(num_stacks=3),
+            layout.Max(),
+            layout.Bsp()
+        ]
+
+
+def init_widgets_default():
+        return dict(
+            font='sans',
+            fontsize=18,
+            padding=3,
+        )
+
+
+extension_defaults = init_widgets_default().copy()
+
+def init_widgets():
+    widget_list = [
                 widget.GroupBox(),
                 widget.Prompt(),
                 widget.WindowName(),
                 widget.TextBox("mugen config", name="Mugen"),
                 widget.Systray(),
-                widget.Clock(format='%Y-%m-%d %a %I:%M %p'),
-            ],
-            24,
-        ),
-    ),
-]
+                widget.Clock(format='%Y-%m-%d %a %I:%M %p'),]
+
+    return widget_list 
+
+def init_widgets_screen():
+    widgets_screen = init_widgets() 
+    return widgets_screen
+
+def init_screens():
+    return [Screen(top=bar.Bar(widgets=init_widgets_screen(), opacity=0.95, size=20))]
 
 # Drag floating layouts.
 mouse = [
@@ -139,6 +171,31 @@ floating_layout = layout.Floating(float_rules=[
 auto_fullscreen = True
 focus_on_window_activation = "smart"
 
+
+if __name__ in["config", "__main__"]:
+
+    lay = init_layouts()
+    gron = init_groups_name()
+    gro = init_groups()
+    lay = init_layouts()
+    screen = init_screens()
+    widg = init_widgets_default()
+    widg_list = init_widgets()
+    widgets_screen = init_widgets_screen()
+
+
+for i in gro:
+    keys.extend([
+        # mod1 + letter of group = switch to group
+        Key([mod], i.name, lazy.group[i.name].toscreen()),
+
+        # mod1 + shift + letter of group = switch to & move focused
+        # window to group
+        Key([mod, "shift"], i.name, lazy.window.togroup(i.name)),
+    ])
+
+
+
 # XXX: Gasp! We're lying here. In fact, nobody really uses or cares about this
 # string besides java UI toolkits; you can see several discussions on the
 # mailing lists, GitHub issues, and other WM documentation that suggest setting
@@ -147,4 +204,4 @@ focus_on_window_activation = "smart"
 #
 # We choose LG3D to maximize irony: it is a 3D non-reparenting WM written in
 # java that happens to be on java's whitelist.
-wmname = "LG3D"
+wmname = "qtile"

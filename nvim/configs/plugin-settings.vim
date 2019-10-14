@@ -291,8 +291,8 @@ inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 nmap <leader>rn <Plug>(coc-rename)
 
 " Remap for format selected region
-xmap <leader>f  <Plug>(coc-format-selected)
-nmap <leader>f  <Plug>(coc-format-selected)
+xmap <leader>fr  <Plug>(coc-format-selected)
+nmap <leader>fr  <Plug>(coc-format-selected)
 
 " Fix autofix problem of current line
 nmap <leader>qf  <Plug>(coc-fix-current)
@@ -400,14 +400,4 @@ let g:fzf_colors =
 " previous-history instead of down and up. If you don't like the change,
 " explicitly bind the keys to down and up in your $FZF_DEFAULT_OPTS.
 let g:fzf_history_dir = '~/.local/share/fzf-history'
-"FZF Keybinding
-nnoremap <silent> <leader>fb :Buffers<CR>
-nnoremap <silent> <leader>fc :Colors<CR>
-nnoremap <silent> <leader>ff :Files<CR>
-nnoremap <silent> <leader>fr :Rg<CR>
-nnoremap <silent> <leader>f :FZF ~ <CR>
-
-
-nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
-
 

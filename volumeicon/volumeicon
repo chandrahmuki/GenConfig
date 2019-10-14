@@ -1,6 +1,6 @@
 [Alsa]
-card=HD-Audio Generic
-channel=Master
+card=Microsoft LifeChat LX-3000
+channel=Speaker
 
 [Notification]
 show_notification=true

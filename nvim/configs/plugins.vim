@@ -50,8 +50,9 @@ Plug 'junegunn/fzf.vim'
 Plug 'pbogut/fzf-mru.vim'
 " COC
 Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
-""" Smart completion (to work with CoC)
-Plug 'zxqfl/tabnine-vim'
+
+" Smart completion (to work with CoC)
+"Plug 'zxqfl/tabnine-vim'
 
 "langage support packs
 Plug 'sheerun/vim-polyglot'

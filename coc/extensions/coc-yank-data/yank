@@ -222,3 +222,306 @@ bd31fd19b24f9ce697c4396476e5dae1|file:///home/david/.config/qtile/config.py|33|1
 	follow_mouse_focus = True
 	bring_front_click = False
 	cursor_warp = False
+50092771da7717d623d47b6065ef9bb2|file:///home/david/.config/qtile/config.py|35|1|V|python
+	def main():ChildProcessError
+d6ca9438433174e731b7caaf8fbe9407|file:///home/david/.config/nvim/configs/plugin-settings.vim|404|1|v|vim
+	nnoremap <silent> <leader>fb :Buffers<CR>
+	nnoremap <silent> <leader>fc :Colors<CR>
+	nnoremap <silent> <leader>ff :Files<CR>
+	nnoremap <silent> <leader>fg :Rg<CR>
+	nnoremap <silent> <leader>f :FZF ~ <CR>
+	
+	
+	nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
+	
+	
+730347e91ae377f2fa1cbbb27ec56753|file:///home/david/.config/nvim/configs/plugin-settings.vim|403|1|V|vim
+	"FZF Keybinding
+c1c425268e68385d1ab5074c17a94f14|file:///home/david/.config/qtile/config.py|67|5|v|python
+	function
+de0bedd9ddb6b7ae69f707ccfbb83799|file:///home/david/.config/qtile/config.py|68|5|V|python
+	    """TODO: Docstring for init_group.
+9c87cc56936f585c0ceac2951800cba8|file:///home/david/.config/qtile/config.py|68|5|V|python
+	    :returns: TODO
+3dd7aa0eaaf86ce7edebc38ddfeffb92|file:///home/david/.config/qtile/config.py|70|1|V|python
+	    pass
+fd9bea88363b5d5ccc89215da42e990a|file:///home/david/.config/qtile/config.py|69|1|V|python
+	    """
+6429d1a7a8eaa7ed8c2caf0f0093f1bb|file:///home/david/.config/qtile/config.py|81|1|v|python
+	
+	kwargs
+1716437febe0ab7451a21724bc8de07c|file:///home/david/.config/qtile/config.py|82|1|V|python
+	    """TODO: Docstring for init_layouts.
+aa3c016069c9158f45c3578df46e466f|file:///home/david/.config/qtile/config.py|68|1|V|python
+	groups = [Group(i) for i in "1234567890"]
+2c499709c810a047d0cdc2bb78084daa|file:///home/david/.config/qtile/config.py|69|1|v|python
+	
+	for i in groups:
+	    keys.extend([
+	        # mod1 + letter of group = switch to group
+	        Key([mod], i.name, lazy.group[i.name].toscreen()),
+	
+	        # mod1 + shift + letter of group = switch to & move focused
+	        # window to group
+	        Key([mod, "shift"], i.name, lazy.window.togroup(i.name)),
+	    ])
+	
+	def i
+61dbf466aa67c1d6599a911a87fae126|file:///home/david/.config/qtile/config.py|68|1|v|python
+	groups = [Group(i) for i in "1234567890"]
+	
+	for i in groups:
+	    keys.extend([
+	        # mod1 + letter of group = switch to group
+	        Key([mod], i.name, lazy.group[i.name].toscreen()),
+	
+	        # mod1 + shift + letter of group = switch to & move focused
+	        # window to group
+	        Key([mod, "shift"], i.name, lazy.window.togroup(i.name)),
+	    ])
+	
+	
+668c5e0ea3eb28078250564f8fe9cb79|file:///home/david/.config/qtile/config.py|70|1|V|python
+	    :arg1: TODO
+34758447c7863170b80fe0917a8d451b|file:///home/david/.config/qtile/config.py|68|1|V|python
+	    """TODO: Docstring for function.
+f5b74752fc30694055174a7182253399|file:///home/david/.config/qtile/config.py|73|5|v|python
+	function(arg1):
+	    """TODO:
+d4f0ed1c45a1501c7599b43065e2fc82|file:///home/david/.config/qtile/config.py|73|5|v|python
+	init_groups():
+	groups = [Group(i) for i in "1234567890"]
+	
+f77c016b67820dab6518b0980acf66b9|file:///home/david/.config/qtile/config.py|74|1|v|python
+	groups = [Group(i) for i in "1234567890"]
+	
+fae3fc94ada7e84c80515a454ed096ec|file:///home/david/.config/qtile/config.py|156|5|V|python
+	    groups = [Group(i) for i in "1234567890"]
+765dfaab2ee737a8a00c9e7831ff3808|file:///home/david/.config/qtile/config.py|152|1|V|python
+	    """TODO: Docstring for __name__.
+90d4327f7ad5fde67f9db444bc341b30|file:///home/david/.config/qtile/config.py|152|1|V|python
+	def __name__():
+f75984dc0edd15ffce52846a7aee1b89|file:///home/david/.config/qtile/config.py|82|9|V|python
+	        return dict(margin=10, border_width=1)
+b47f0272ddebf4e8c723b76896a543c8|file:///home/david/.config/qtile/config.py|83|1|V|python
+	            ("",{'layout': 'floating'}),
+bc95dfc14146aa23e43f2ea7af04d310|file:///home/david/.config/qtile/config.py|84|12|V|python
+	            
+67956fe033e95f608741fab20d34a26b|file:///home/david/.config/qtile/config.py|84|29|V|python
+	                            'floating'}),
+bfe29e5832b5303fcaf9dad3b84082c4|file:///home/david/.config/qtile/config.py|84|1|V|python
+	            ("",{'layout': 'floating'}),
+3d592accd17bf2620297f16e6c755080|file:///home/david/.config/qtile/config.py|85|1|V|python
+	            ("",{'layout': 'max'}),
+d14d3354e148db4435349909e4836e52|file:///home/david/.config/qtile/config.py|70|8|V|python
+	        groups = [Group(i) for i in "1234567890"]
+f541720d990c2f52d6ccbcd0dfd69f7f|file:///home/david/.config/qtile/config.py|70|9|V|python
+	        for i in groups:
+fbe352b39ba675924e7e7d916d5e4d7c|file:///home/david/.config/qtile/config.py|71|12|v|python
+	 keys.extend([
+	                # mod1 + letter of group = switch to group
+	                Key([mod], i.name, lazy.group[i.name].toscreen()),
+	                # mod1 + shift + letter of group = switch to & move focused
+	                # window to group
+	                Key([mod, "shift"], i.name, lazy.window.togroup(i.name)),
+	            ])
+	
+	
+f78e0eee063501210a96eafac02b3b8b|file:///home/david/.config/qtile/config.py|71|1|v|python
+	            keys.extend([
+	                # mod1 + letter of group = switch to group
+	                Key([mod], i.name, lazy.group[i.name].toscreen()),
+	                # mod1 + shift + letter of group = switch to & move focused
+	                # window to group
+	                Key([mod, "shift"], i.name, lazy.window.togroup(i.name)),
+	            ])
+	
+	
+18e9ddab76c4dbd2cb7d774df0589804|file:///home/david/.config/qtile/config.py|1|1|V|python
+	# Copyright (c) 2010 Aldo Cortesi
+	# Copyright (c) 2010, 2014 dequis
+	# Copyright (c) 2012 Randall Ma
+	# Copyright (c) 2012-2014 Tycho Andersen
+	# Copyright (c) 2012 Craig Barnes
+	# Copyright (c) 2013 horsik
+	# Copyright (c) 2013 Tao Sauvage
+	#
+	# Permission is hereby granted, free of charge, to any person obtaining a copy
+	# of this software and associated documentation files (the "Software"), to deal
+	# in the Software without restriction, including without limitation the rights
+	# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+	# copies of the Software, and to permit persons to whom the Software is
+	# furnished to do so, subject to the following conditions:
+	#
+	# The above copyright notice and this permission notice shall be included in
+	# all copies or substantial portions of the Software.
+	#
+	# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+	# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+	# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+	# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+	# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+	# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+	# SOFTWARE.
+	
+	from libqtile.config import Key, Screen, Group, Drag, Click
+	from libqtile.command import lazy
+	from libqtile import layout, bar, widget
+	
+	from typing import List  # noqa: F401
+	
+	
+	
+	mod = "mod4"
+	
+	keys = [
+	    # Switch between windows in current stack pane
+	    Key([mod], "k", lazy.layout.down()),
+	    Key([mod], "j", lazy.layout.up()),
+	
+	    # Move windows up or down in current stack
+	    Key([mod, "control"], "k", lazy.layout.shuffle_down()),
+	    Key([mod, "control"], "j", lazy.layout.shuffle_up()),
+	
+	    # Switch window focus to other pane(s) of stack
+	    Key([mod], "space", lazy.layout.next()),
+	
+	    # Swap panes of split stack
+	    Key([mod, "shift"], "space", lazy.layout.rotate()),
+	
+	    # Toggle between split and unsplit sides of stack.
+	    # Split = all windows displayed
+	    # Unsplit = 1 window displayed, like Max layout, but still with
+	    # multiple stack panes
+	    Key([mod, "shift"], "Return", lazy.layout.toggle_split()),
+	    Key([mod], "Return", lazy.spawn("kitty")),
+	    Key([mod, "shift"], "p", lazy.spawn("rofi -show drun")),
+	    # Toggle between different layouts as defined below
+	    Key([mod], "Tab", lazy.next_layout()),
+	    Key([mod], "w", lazy.window.kill()),
+	
+	    Key([mod, "control"], "r", lazy.restart()),
+	    Key([mod, "control"], "q", lazy.shutdown()),
+	    Key([mod], "r", lazy.spawncmd()),
+	]
+	
+	
+	def init_groups():
+	    return [Group(name,**kwargs)for name , kwargs in group_names]
+	            keys.extend([
+b788841ca1a60fcc18d38e15489cfa37|file:///home/david/.config/qtile/config.py|70|1|v|python
+	    return [Group(name,**kwargs)for name , kwargs in group_names]
+	            keys.extend([
+	                # mod1 + letter of group = switch to group
+	                Key([mod], i.name, lazy.group[i.name].toscreen()),
+	                # mod1 + shift + letter of group = switch to & move focused
+	                # window to group
+	                Key([mod, "shift"], i.name, lazy.window.togroup(i.name)),
+	            ])
+	
+	
+1df8c323274a3c0563c98600fc6b600a|file:///home/david/.config/qtile/config.py|70|1|V|python
+	    return [Group(name,**kwargs)for name , kwargs in group_names]
+	            keys.extend([
+2616d3680550a2df62830841d3790641|file:///home/david/.config/qtile/config.py|71|11|v|python
+	  keys.extend([
+	                # mod1 + letter of group = switch to group
+	                Key([mod], i.name, lazy.group[i.name].toscreen()),
+	                # mod1 + shift + letter of group = switch to & move focused
+	                # window to group
+	                Key([mod, "shift"], i.name, lazy.window.togroup(i.name)),
+	            ])
+	
+	
+bdfb702dcdffdf5f8f8827e09199040b|file:///home/david/.config/qtile/config.py|71|1|v|python
+	            keys.extend([
+	                # mod1 + letter of group = switch to group
+	                Key([mod], i.name, lazy.group[i.name].toscreen()),
+	                # mod1 + shift + letter of group = switch to & move focused
+	                # window to group
+	                Key([mod, "shift"], i.name, lazy.window.togroup(i.name)),
+	 
+a4079ddf0b964d8ba1d2f6fb28e92c81|file:///home/david/.config/qtile/config.py|71|1|V|python
+	           ])
+b5c39fb22f4db31d42a48f4bd9d04852|file:///home/david/.config/qtile/config.py|163|1|v|python
+	
+	  keys.extend([
+	                # mod1 + letter of group = switch to group
+	                Key([mod], i.name, lazy.group[i.name].toscreen()),
+	                # mod1 + shift + letter of group = switch to & move focused
+	                # window to group
+	                Key([mod, "shift"], i.name, lazy.window.togroup(i.name)),
+	            ])
+0cf31b2c283ce3431794586df7b0996d|file:///home/david/.config/qtile/config.py|162|1|V|python
+	    
+715836932133e381a31eac9b319d72c1|file:///home/david/.config/qtile/config.py|69|1|v|python
+	def init_groups():
+	    return [Group(name,**kwargs)for name , kwargs in gron]
+	
+	
+4d79f2b48728ae29c85648fcde394a8a|file:///home/david/.config/qtile/config.py|70|1|V|python
+	    return [Group(name,**kwargs)for name , kwargs in gron]
+46d530384413329ec285fc090c05d03d|file:///home/david/.config/qtile/config.py|69|1|V|python
+	def init_groups():
+b5d162defb30c805b9ed235bc9debb60|file:///home/david/.config/qtile/config.py|160|1|V|python
+	    gro = init_groups()
+8f202a6c76f51c10c3fe009ec9545f8b|file:///home/david/.config/qtile/config.py|156|1|V|python
+	    widg = init_widgets_default()
+476816ab2646f9b3ef0292875449b625|file:///home/david/.config/qtile/config.py|156|1|V|python
+	    lay = init_layouts()
+5f0e2a8055de1ab33d5b0a68b869f20c|file:///home/david/.config/qtile/config.py|71|1|V|python
+	    return [("",{'layout': 'max'}),
+048ec1d7406721a409ba8365d6c57522|file:///home/david/.config/qtile/config.py|71|1|V|python
+	    return [("",{'layout': 'max'}),
+	            ("爵",{'layout': 'max'}),
+4fd0ebe0e4c031ae4223a57a2350922f|file:///home/david/.config/qtile/config.py|71|1|V|python
+	    return [("1",{'layout': 'max'}),
+12c95ce00f807a28015d3b7af9605379|file:///home/david/.config/qtile/config.py|72|1|V|python
+	            ("爵",{'layout': 'max'}),
+1add2fdfacebbb87a4824318b271efc1|file:///home/david/.config/qtile/config.py|71|1|V|python
+	    return [("1",{'label':"",'layout': 'max'}),
+9e616667a17188ae08238f27a627f7f8|file:///home/david/.config/qtile/config.py|72|1|V|python
+	            ("2",{'label':"爵",'layout': 'max'}),
+e7711d94facc48ef289bb3ecdcf9b65b|file:///home/david/.config/qtile/config.py|72|19|v|python
+	'label':"爵",
+5cf77828765b939d133576e7dcd4a16a|file:///home/david/.config/qtile/config.py|73|19|v|python
+	'label':"",
+ad8064917550fe555e5860148bdf11bf|file:///home/david/.config/qtile/config.py|74|19|v|python
+	'label':"",
+8e25cb0956aaf8208fd40320fd2cb746|file:///home/david/.config/qtile/config.py|75|21|v|python
+	'label':"",
+5e7815d3b18ea6383cf1bd0f4bc1347e|file:///home/david/.config/qtile/config.py|136|1|V|python
+	    ),
+7dda6d79657154511906b2246986a0fb|file:///home/david/.config/qtile/config.py|135|1|V|python
+	        ),
+c024638acd87cbd467ad1ac423072336|file:///home/david/.config/qtile/config.py|134|1|V|python
+	            24,
+2873188dbe8f528939e135feada646f0|file:///home/david/.config/qtile/config.py|133|1|V|python
+	            ],
+3a42e140f55fc1a1fc280810c166e28b|file:///home/david/.config/qtile/config.py|125|3|V|python
+	        bottom=bar.Bar(
+0f3ffd8a4d2d003552e09f0ce68ee97d|file:///home/david/.config/qtile/config.py|124|5|V|python
+	    Screen(
+0c591fef25fc8e995418011855f9b04f|file:///home/david/.config/qtile/config.py|123|1|V|python
+	screens = [
+12249fc785cfcc3c50aef8b660cc0500|file:///home/david/.config/qtile/config.py|123|13|V|python
+	            [
+f1bc805db6bdae1bf7bd099d63619451|file:///home/david/.config/qtile/config.py|126|16|v|python
+	 widget.GroupBox(),
+	                widget.Prompt(),
+	                widget.WindowName(),
+	                widget.TextBox("mugen config", name="Mugen"),
+	                widget.Systray(),
+	                widget.Clock(format='%Y-%m-%d %a %I:%M %p'),
+	
+	
+239b31d208e7399525ae63c837a0a324|file:///home/david/.config/qtile/config.py|125|1|V|python
+	    ]
+	                widget.GroupBox(),
+2c3ca6020810d3c7ab520ac352db2b18|file:///home/david/.config/qtile/config.py|199|1|v|python
+	
+	for i, (name, kwargs) in enumerate(gron, 1):
+	    keys.append(Key([mod], str(i), lazy.group[name].toscreen()))          # Switch to another group     
+	    keys.append(Key([mod, "shift"], str(i), lazy.window.togroup(name)))
+	
+	

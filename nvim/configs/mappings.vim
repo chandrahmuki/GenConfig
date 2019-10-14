@@ -93,3 +93,14 @@ nnoremap <Leader>co  :<C-u>CocList outline<cr>
 
 "FZFmru
 map <leader>p :FZFMru<cr>
+"FZF mapping 
+nnoremap <silent> <leader>fb :Buffers<CR>
+nnoremap <silent> <leader>fc :Colors<CR>
+nnoremap <silent> <leader>ff :Files<CR>
+nnoremap <silent> <leader>fg :Rg<CR>
+nnoremap <silent> <leader>f :FZF ~ <CR>
+
+"python Exec
+nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
+
+
