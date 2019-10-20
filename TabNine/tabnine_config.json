@@ -5,9 +5,9 @@
   "ignore_all_lsp": false,
   "creation_time": "2019-09-14T16:46:36.400170449Z",
   "semantic_status": {
+    "python": "Enabled",
     "c": "Enabled",
-    "cpp": "Enabled",
-    "python": "Enabled"
+    "cpp": "Enabled"
   },
   "disable_auto_update": false,
   "user_understands_that_enabling_tabnine_cloud_sends_code_to_tabnine_servers": false,

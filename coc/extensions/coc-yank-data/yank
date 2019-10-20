@@ -525,3 +525,2953 @@ f1bc805db6bdae1bf7bd099d63619451|file:///home/david/.config/qtile/config.py|126|
 	    keys.append(Key([mod, "shift"], str(i), lazy.window.togroup(name)))
 	
 	
+53ad5c78cbc4057584877d78256fee26|file:///home/david/polybar/config|19|1|v|dosini
+	[colors]
+	;background = ${xrdb:color0:#222}
+	background = #222
+	background-alt = #444
+	;foreground = ${xrdb:color7:#222}
+	foreground = #dfdfdf
+	foreground-alt = #555
+	primary = #ffb52a
+	secondary = #e60053
+	alert = #bd2c40
+	
+	[bar/mugbar]
+	;monitor = ${env:MONITOR:HDMI-1}
+	width = 100%
+	height = 27
+	;offset-x = 1%
+	;offset-y = 1%
+	radius = 6.0
+	fixed-center = false
+	
+	background = ${colors.background}
+	foreground = ${colors.foreground}
+	
+	line-size = 3
+	line-color = #f00
+	
+	border-size = 4
+	border-color = #00000000
+	
+	padding-left = 0
+	padding-right = 2
+	
+	module-margin-left = 1
+	module-margin-right = 2
+	
+	font-0 = fixed:pixelsize=10;1
+	font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+	font-2 = siji:pixelsize=10;1
+	
+	modules-left = bspwm
+	modules-center = 
+	modules-right = filesystem xbacklight alsa xkeyboard memory cpu battery temperature date powermenu
+	
+	tray-position = right
+	tray-padding = 2
+	;tray-background = #0063ff
+	
+	;wm-restack = bspwm
+	;wm-restack = i3
+	
+	;override-redirect = true
+	
+	;scroll-up = bspwm-desknext
+	;scroll-down = bspwm-deskprev
+	
+	;scroll-up = i3wm-wsnext
+	;scroll-down = i3wm-wsprev
+	
+	cursor-click = pointer
+	cursor-scroll = ns-resize
+	
+	[module/xwindow]
+	type = internal/xwindow
+	label = %title:0:30:...%
+	
+	[module/xkeyboard]
+	type = internal/xkeyboard
+	blacklist-0 = num lock
+	
+	format-prefix = " "
+	format-prefix-foreground = ${colors.foreground-alt}
+	format-prefix-underline = ${colors.secondary}
+	
+	label-layout = %layout%
+	label-layout-underline = ${colors.secondary}
+	
+	label-indicator-padding = 2
+	label-indicator-margin = 1
+	label-indicator-background = ${colors.secondary}
+	label-indicator-underline = ${colors.secondary}
+	
+	[module/filesystem]
+	type = internal/fs
+	interval = 25
+	
+	mount-0 = /
+	
+	label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
+	label-unmounted = %mountpoint% not mounted
+	label-unmounted-foreground = ${colors.foreground-alt}
+	
+	[module/bspwm]
+	type = internal/bspwm
+	
+	label-focused = %index%
+	label-focused-background = ${colors.background-alt}
+	label-focused-underline= ${colors.primary}
+	label-focused-padding = 2
+	
+	label-occupied = %index%
+	label-occupied-padding = 2
+	
+	label-urgent = %index%!
+	label-urgent-background = ${colors.alert}
+	label-urgent-padding = 2
+	
+	label-empty = %index%
+	label-empty-foreground = ${colors.foreground-alt}
+	label-empty-padding = 2
+	
+	; Separator in between workspaces
+	; label-separator = |
+	
+	[module/i3]
+	type = internal/i3
+	format = <label-state> <label-mode>
+	index-sort = true
+	wrapping-scroll = false
+	
+	; Only show workspaces on the same output as the bar
+	;pin-workspaces = true
+	
+	label-mode-padding = 2
+	label-mode-foreground = #000
+	label-mode-background = ${colors.primary}
+	
+	; focused = Active workspace on focused monitor
+	label-focused = %index%
+	label-focused-background = ${colors.background-alt}
+	label-focused-underline= ${colors.primary}
+	label-focused-padding = 2
+	
+	; unfocused = Inactive workspace on any monitor
+	label-unfocused = %index%
+	label-unfocused-padding = 2
+	
+	; visible = Active workspace on unfocused monitor
+	label-visible = %index%
+	label-visible-background = ${self.label-focused-background}
+	label-visible-underline = ${self.label-focused-underline}
+	label-visible-padding = ${self.label-focused-padding}
+	
+	; urgent = Workspace with urgency hint set
+	label-urgent = %index%
+	label-urgent-background = ${colors.alert}
+	label-urgent-padding = 2
+	
+	; Separator in between workspaces
+	; label-separator = |
+	
+	
+	[module/mpd]
+	type = internal/mpd
+	format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
+	
+	icon-prev = 
+	icon-stop = 
+	icon-play = 
+	icon-pause = 
+	icon-next = 
+	
+	label-song-maxlen = 25
+	label-song-ellipsis = true
+	
+	[module/xbacklight]
+	type = internal/xbacklight
+	
+	format = <label> <bar>
+	label = BL
+	
+	bar-width = 10
+	bar-indicator = |
+	bar-indicator-foreground = #fff
+	bar-indicator-font = 2
+	bar-fill = ─
+	bar-fill-font = 2
+	bar-fill-foreground = #9f78e1
+	bar-empty = ─
+	bar-empty-font = 2
+	bar-empty-foreground = ${colors.foreground-alt}
+	
+	[module/backlight-acpi]
+	inherit = module/xbacklight
+	type = internal/backlight
+	card = intel_backlight
+	
+	[module/cpu]
+	type = internal/cpu
+	interval = 2
+	format-prefix = " "
+	format-prefix-foreground = ${colors.foreground-alt}
+	format-underline = #f90000
+	label = %percentage:2%%
+	
+	[module/memory]
+	type = internal/memory
+	interval = 2
+	format-prefix = " "
+	format-prefix-foreground = ${colors.foreground-alt}
+	format-underline = #4bffdc
+	label = %percentage_used%%
+	
+	[module/wlan]
+	type = internal/network
+	interface = 
+	interval = 3.0
+	
+	format-connected = <ramp-signal> <label-connected>
+	format-connected-underline = #9f78e1
+	label-connected = %essid%
+	
+	format-disconnected =
+	;format-disconnected = <label-disconnected>
+	;format-disconnected-underline = ${self.format-connected-underline}
+	;label-disconnected = %ifname% disconnected
+	;label-disconnected-foreground = ${colors.foreground-alt}
+	
+	ramp-signal-0 = 
+	ramp-signal-1 = 
+	ramp-signal-2 = 
+	ramp-signal-3 = 
+	ramp-signal-4 = 
+	ramp-signal-foreground = ${colors.foreground-alt}
+	
+	[module/eth]
+	type = internal/network
+	interface = 
+	interval = 3.0
+	
+	format-connected-underline = #55aa55
+	format-connected-prefix = " "
+	format-connected-prefix-foreground = ${colors.foreground-alt}
+	label-connected = %local_ip%
+	
+	format-disconnected =
+	;format-disconnected = <label-disconnected>
+	;format-disconnected-underline = ${self.format-connected-underline}
+	;label-disconnected = %ifname% disconnected
+	;label-disconnected-foreground = ${colors.foreground-alt}
+	
+	[module/date]
+	type = internal/date
+	interval = 5
+	
+	date =
+	date-alt = " %Y-%m-%d"
+	
+	time = %H:%M
+	time-alt = %H:%M:%S
+	
+	format-prefix = 
+	format-prefix-foreground = ${colors.foreground-alt}
+	format-underline = #0a6cf5
+	
+	label = %date% %time%
+	
+	[module/pulseaudio]
+	type = internal/pulseaudio
+	
+	format-volume = <label-volume> <bar-volume>
+	label-volume = VOL %percentage%%
+	label-volume-foreground = ${root.foreground}
+	
+	label-muted = 🔇 muted
+	label-muted-foreground = #666
+	
+	bar-volume-width = 10
+	bar-volume-foreground-0 = #55aa55
+	bar-volume-foreground-1 = #55aa55
+	bar-volume-foreground-2 = #55aa55
+	bar-volume-foreground-3 = #55aa55
+	bar-volume-foreground-4 = #55aa55
+	bar-volume-foreground-5 = #f5a70a
+	bar-volume-foreground-6 = #ff5555
+	bar-volume-gradient = false
+	bar-volume-indicator = |
+	bar-volume-indicator-font = 2
+	bar-volume-fill = ─
+	bar-volume-fill-font = 2
+	bar-volume-empty = ─
+	bar-volume-empty-font = 2
+	bar-volume-empty-foreground = ${colors.foreground-alt}
+	
+	[module/alsa]
+	type = internal/alsa
+	
+	format-volume = <label-volume> <bar-volume>
+	label-volume = VOL
+	label-volume-foreground = ${root.foreground}
+	
+	format-muted-prefix = " "
+	format-muted-foreground = ${colors.foreground-alt}
+	label-muted = sound muted
+	
+	bar-volume-width = 10
+	bar-volume-foreground-0 = #55aa55
+	bar-volume-foreground-1 = #55aa55
+	bar-volume-foreground-2 = #55aa55
+	bar-volume-foreground-3 = #55aa55
+	bar-volume-foreground-4 = #55aa55
+	bar-volume-foreground-5 = #f5a70a
+	bar-volume-foreground-6 = #ff5555
+	bar-volume-gradient = false
+	bar-volume-indicator = |
+	bar-volume-indicator-font = 2
+	bar-volume-fill = ─
+	bar-volume-fill-font = 2
+	bar-volume-empty = ─
+	bar-volume-empty-font = 2
+	bar-volume-empty-foreground = ${colors.foreground-alt}
+	
+	[module/battery]
+	type = internal/battery
+	battery = BAT0
+	adapter = ADP1
+	full-at = 98
+	
+	format-charging = <animation-charging> <label-charging>
+	format-charging-underline = #ffb52a
+	
+	format-discharging = <animation-discharging> <label-discharging>
+	format-discharging-underline = ${self.format-charging-underline}
+	
+	format-full-prefix = " "
+	format-full-prefix-foreground = ${colors.foreground-alt}
+	format-full-underline = ${self.format-charging-underline}
+	
+	ramp-capacity-0 = 
+	ramp-capacity-1 = 
+	ramp-capacity-2 = 
+	ramp-capacity-foreground = ${colors.foreground-alt}
+	
+	animation-charging-0 = 
+	animation-charging-1 = 
+	animation-charging-2 = 
+	animation-charging-foreground = ${colors.foreground-alt}
+	animation-charging-framerate = 750
+	
+	animation-discharging-0 = 
+	animation-discharging-1 = 
+	animation-discharging-2 = 
+	animation-discharging-foreground = ${colors.foreground-alt}
+	animation-discharging-framerate = 750
+	
+	[module/temperature]
+	type = internal/temperature
+	thermal-zone = 0
+	warn-temperature = 60
+	
+	format = <ramp> <label>
+	format-underline = #f50a4d
+	format-warn = <ramp> <label-warn>
+	format-warn-underline = ${self.format-underline}
+	
+	label = %temperature-c%
+	label-warn = %temperature-c%
+	label-warn-foreground = ${colors.secondary}
+	
+	ramp-0 = 
+	ramp-1 = 
+	ramp-2 = 
+	ramp-foreground = ${colors.foreground-alt}
+	
+	[module/powermenu]
+	type = custom/menu
+	
+	expand-right = true
+	
+	format-spacing = 1
+	
+	label-open = 
+	label-open-foreground = ${colors.secondary}
+	label-close =  cancel
+	label-close-foreground = ${colors.secondary}
+	label-separator = |
+	label-separator-foreground = ${colors.foreground-alt}
+	
+	menu-0-0 = reboot
+	menu-0-0-exec = menu-open-1
+	menu-0-1 = power off
+	menu-0-1-exec = menu-open-2
+	
+	menu-1-0 = cancel
+	menu-1-0-exec = menu-open-0
+	menu-1-1 = reboot
+	menu-1-1-exec = sudo reboot
+	
+	menu-2-0 = power off
+	menu-2-0-exec = sudo poweroff
+	menu-2-1 = cancel
+	menu-2-1-exec = menu-open-0
+	
+	[settings]
+	screenchange-reload = true
+	;compositing-background = xor
+	;compositing-background = screen
+	;compositing-foreground = source
+	;compositing-border = over
+	;pseudo-transparency = false
+	
+	[global/wm]
+	margin-top = 5
+	margin-bottom = 5
+	
+	; vim:ft=dosini
+c3082988da28795d10a115fe695d00da|file:///home/david/polybar/config|18|1|v|dosini
+	
+	[colors]
+	;background = ${xrdb:color0:#222}
+	background = #222
+	background-alt = #444
+	;foreground = ${xrdb:color7:#222}
+	foreground = #dfdfdf
+	foreground-alt = #555
+	primary = #ffb52a
+	secondary = #e60053
+	alert = #bd2c40
+	
+	[bar/mugbar]
+	;monitor = ${env:MONITOR:HDMI-1}
+	width = 100%
+	height = 27
+	;offset-x = 1%
+	;offset-y = 1%
+	radius = 6.0
+	fixed-center = false
+	
+	background = ${colors.background}
+	foreground = ${colors.foreground}
+	
+	line-size = 3
+	line-color = #f00
+	
+	border-size = 4
+	border-color = #00000000
+	
+	padding-left = 0
+	padding-right = 2
+	
+	module-margin-left = 1
+	module-margin-right = 2
+	
+	font-0 = fixed:pixelsize=10;1
+	font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+	font-2 = siji:pixelsize=10;1
+	
+	modules-left = bspwm
+	modules-center = 
+	modules-right = filesystem xbacklight alsa xkeyboard memory cpu battery temperature date powermenu
+	
+	tray-position = right
+	tray-padding = 2
+	;tray-background = #0063ff
+	
+	;wm-restack = bspwm
+	;wm-restack = i3
+	
+	;override-redirect = true
+	
+	;scroll-up = bspwm-desknext
+	;scroll-down = bspwm-deskprev
+	
+	;scroll-up = i3wm-wsnext
+	;scroll-down = i3wm-wsprev
+	
+	cursor-click = pointer
+	cursor-scroll = ns-resize
+	
+	[module/xwindow]
+	type = internal/xwindow
+	label = %title:0:30:...%
+	
+	[module/xkeyboard]
+	type = internal/xkeyboard
+	blacklist-0 = num lock
+	
+	format-prefix = " "
+	format-prefix-foreground = ${colors.foreground-alt}
+	format-prefix-underline = ${colors.secondary}
+	
+	label-layout = %layout%
+	label-layout-underline = ${colors.secondary}
+	
+	label-indicator-padding = 2
+	label-indicator-margin = 1
+	label-indicator-background = ${colors.secondary}
+	label-indicator-underline = ${colors.secondary}
+	
+	[module/filesystem]
+	type = internal/fs
+	interval = 25
+	
+	mount-0 = /
+	
+	label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
+	label-unmounted = %mountpoint% not mounted
+	label-unmounted-foreground = ${colors.foreground-alt}
+	
+	[module/bspwm]
+	type = internal/bspwm
+	
+	label-focused = %index%
+	label-focused-background = ${colors.background-alt}
+	label-focused-underline= ${colors.primary}
+	label-focused-padding = 2
+	
+	label-occupied = %index%
+	label-occupied-padding = 2
+	
+	label-urgent = %index%!
+	label-urgent-background = ${colors.alert}
+	label-urgent-padding = 2
+	
+	label-empty = %index%
+	label-empty-foreground = ${colors.foreground-alt}
+	label-empty-padding = 2
+	
+	; Separator in between workspaces
+	; label-separator = |
+	
+	[module/i3]
+	type = internal/i3
+	format = <label-state> <label-mode>
+	index-sort = true
+	wrapping-scroll = false
+	
+	; Only show workspaces on the same output as the bar
+	;pin-workspaces = true
+	
+	label-mode-padding = 2
+	label-mode-foreground = #000
+	label-mode-background = ${colors.primary}
+	
+	; focused = Active workspace on focused monitor
+	label-focused = %index%
+	label-focused-background = ${colors.background-alt}
+	label-focused-underline= ${colors.primary}
+	label-focused-padding = 2
+	
+	; unfocused = Inactive workspace on any monitor
+	label-unfocused = %index%
+	label-unfocused-padding = 2
+	
+	; visible = Active workspace on unfocused monitor
+	label-visible = %index%
+	label-visible-background = ${self.label-focused-background}
+	label-visible-underline = ${self.label-focused-underline}
+	label-visible-padding = ${self.label-focused-padding}
+	
+	; urgent = Workspace with urgency hint set
+	label-urgent = %index%
+	label-urgent-background = ${colors.alert}
+	label-urgent-padding = 2
+	
+	; Separator in between workspaces
+	; label-separator = |
+	
+	
+	[module/mpd]
+	type = internal/mpd
+	format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
+	
+	icon-prev = 
+	icon-stop = 
+	icon-play = 
+	icon-pause = 
+	icon-next = 
+	
+	label-song-maxlen = 25
+	label-song-ellipsis = true
+	
+	[module/xbacklight]
+	type = internal/xbacklight
+	
+	format = <label> <bar>
+	label = BL
+	
+	bar-width = 10
+	bar-indicator = |
+	bar-indicator-foreground = #fff
+	bar-indicator-font = 2
+	bar-fill = ─
+	bar-fill-font = 2
+	bar-fill-foreground = #9f78e1
+	bar-empty = ─
+	bar-empty-font = 2
+	bar-empty-foreground = ${colors.foreground-alt}
+	
+	[module/backlight-acpi]
+	inherit = module/xbacklight
+	type = internal/backlight
+	card = intel_backlight
+	
+	[module/cpu]
+	type = internal/cpu
+	interval = 2
+	format-prefix = " "
+	format-prefix-foreground = ${colors.foreground-alt}
+	format-underline = #f90000
+	label = %percentage:2%%
+	
+	[module/memory]
+	type = internal/memory
+	interval = 2
+	format-prefix = " "
+	format-prefix-foreground = ${colors.foreground-alt}
+	format-underline = #4bffdc
+	label = %percentage_used%%
+	
+	[module/wlan]
+	type = internal/network
+	interface = 
+	interval = 3.0
+	
+	format-connected = <ramp-signal> <label-connected>
+	format-connected-underline = #9f78e1
+	label-connected = %essid%
+	
+	format-disconnected =
+	;format-disconnected = <label-disconnected>
+	;format-disconnected-underline = ${self.format-connected-underline}
+	;label-disconnected = %ifname% disconnected
+	;label-disconnected-foreground = ${colors.foreground-alt}
+	
+	ramp-signal-0 = 
+	ramp-signal-1 = 
+	ramp-signal-2 = 
+	ramp-signal-3 = 
+	ramp-signal-4 = 
+	ramp-signal-foreground = ${colors.foreground-alt}
+	
+	[module/eth]
+	type = internal/network
+	interface = 
+	interval = 3.0
+	
+	format-connected-underline = #55aa55
+	format-connected-prefix = " "
+	format-connected-prefix-foreground = ${colors.foreground-alt}
+	label-connected = %local_ip%
+	
+	format-disconnected =
+	;format-disconnected = <label-disconnected>
+	;format-disconnected-underline = ${self.format-connected-underline}
+	;label-disconnected = %ifname% disconnected
+	;label-disconnected-foreground = ${colors.foreground-alt}
+	
+	[module/date]
+	type = internal/date
+	interval = 5
+	
+	date =
+	date-alt = " %Y-%m-%d"
+	
+	time = %H:%M
+	time-alt = %H:%M:%S
+	
+	format-prefix = 
+	format-prefix-foreground = ${colors.foreground-alt}
+	format-underline = #0a6cf5
+	
+	label = %date% %time%
+	
+	[module/pulseaudio]
+	type = internal/pulseaudio
+	
+	format-volume = <label-volume> <bar-volume>
+	label-volume = VOL %percentage%%
+	label-volume-foreground = ${root.foreground}
+	
+	label-muted = 🔇 muted
+	label-muted-foreground = #666
+	
+	bar-volume-width = 10
+	bar-volume-foreground-0 = #55aa55
+	bar-volume-foreground-1 = #55aa55
+	bar-volume-foreground-2 = #55aa55
+	bar-volume-foreground-3 = #55aa55
+	bar-volume-foreground-4 = #55aa55
+	bar-volume-foreground-5 = #f5a70a
+	bar-volume-foreground-6 = #ff5555
+	bar-volume-gradient = false
+	bar-volume-indicator = |
+	bar-volume-indicator-font = 2
+	bar-volume-fill = ─
+	bar-volume-fill-font = 2
+	bar-volume-empty = ─
+	bar-volume-empty-font = 2
+	bar-volume-empty-foreground = ${colors.foreground-alt}
+	
+	[module/alsa]
+	type = internal/alsa
+	
+	format-volume = <label-volume> <bar-volume>
+	label-volume = VOL
+	label-volume-foreground = ${root.foreground}
+	
+	format-muted-prefix = " "
+	format-muted-foreground = ${colors.foreground-alt}
+	label-muted = sound muted
+	
+	bar-volume-width = 10
+	bar-volume-foreground-0 = #55aa55
+	bar-volume-foreground-1 = #55aa55
+	bar-volume-foreground-2 = #55aa55
+	bar-volume-foreground-3 = #55aa55
+	bar-volume-foreground-4 = #55aa55
+	bar-volume-foreground-5 = #f5a70a
+	bar-volume-foreground-6 = #ff5555
+	bar-volume-gradient = false
+	bar-volume-indicator = |
+	bar-volume-indicator-font = 2
+	bar-volume-fill = ─
+	bar-volume-fill-font = 2
+	bar-volume-empty = ─
+	bar-volume-empty-font = 2
+	bar-volume-empty-foreground = ${colors.foreground-alt}
+	
+	[module/battery]
+	type = internal/battery
+	battery = BAT0
+	adapter = ADP1
+	full-at = 98
+	
+	format-charging = <animation-charging> <label-charging>
+	format-charging-underline = #ffb52a
+	
+	format-discharging = <animation-discharging> <label-discharging>
+	format-discharging-underline = ${self.format-charging-underline}
+	
+	format-full-prefix = " "
+	format-full-prefix-foreground = ${colors.foreground-alt}
+	format-full-underline = ${self.format-charging-underline}
+	
+	ramp-capacity-0 = 
+	ramp-capacity-1 = 
+	ramp-capacity-2 = 
+	ramp-capacity-foreground = ${colors.foreground-alt}
+	
+	animation-charging-0 = 
+	animation-charging-1 = 
+	animation-charging-2 = 
+	animation-charging-foreground = ${colors.foreground-alt}
+	animation-charging-framerate = 750
+	
+	animation-discharging-0 = 
+	animation-discharging-1 = 
+	animation-discharging-2 = 
+	animation-discharging-foreground = ${colors.foreground-alt}
+	animation-discharging-framerate = 750
+	
+	[module/temperature]
+	type = internal/temperature
+	thermal-zone = 0
+	warn-temperature = 60
+	
+	format = <ramp> <label>
+	format-underline = #f50a4d
+	format-warn = <ramp> <label-warn>
+	format-warn-underline = ${self.format-underline}
+	
+	label = %temperature-c%
+	label-warn = %temperature-c%
+	label-warn-foreground = ${colors.secondary}
+	
+	ramp-0 = 
+	ramp-1 = 
+	ramp-2 = 
+	ramp-foreground = ${colors.foreground-alt}
+	
+	[module/powermenu]
+	type = custom/menu
+	
+	expand-right = true
+	
+	format-spacing = 1
+	
+	label-open = 
+	label-open-foreground = ${colors.secondary}
+	label-close =  cancel
+	label-close-foreground = ${colors.secondary}
+	label-separator = |
+	label-separator-foreground = ${colors.foreground-alt}
+	
+	menu-0-0 = reboot
+	menu-0-0-exec = menu-open-1
+	menu-0-1 = power off
+	menu-0-1-exec = menu-open-2
+	
+	menu-1-0 = cancel
+	menu-1-0-exec = menu-open-0
+	menu-1-1 = reboot
+	menu-1-1-exec = sudo reboot
+	
+	menu-2-0 = power off
+	menu-2-0-exec = sudo poweroff
+	menu-2-1 = cancel
+	menu-2-1-exec = menu-open-0
+	
+	[settings]
+	screenchange-reload = true
+	;compositing-background = xor
+	;compositing-background = screen
+	;compositing-foreground = source
+	;compositing-border = over
+	;pseudo-transparency = false
+	
+	[global/wm]
+	margin-top = 5
+	margin-bottom = 5
+	
+	; vim:ft=dosini
+0328cee2d93bc8bf6a2ce8f7f88f1a63|file:///home/david/polybar/config|391|1|v|dosini
+	
+	[module/news-archlinux]
+	type = custom/script
+	exec = ~/.polybar-scripts/news-archlinux.py
+	interval = 600
+	
+	format = " <label> "
+	label = "%output:0:21:...%"
+	;label-background = #2676FE
+	
+	
+6b9450fd9f844241e851be60b6d36899|file:///home/david/polybar/config|577|1|v|dosini
+	
+	[module/battery]
+	type = internal/battery
+	battery = BAT0
+	adapter = ADP1
+	full-at = 100
+	
+	format-charging = "<label-charging> "
+	format-charging-prefix = "Charging: "
+	
+	format-discharging = "<label-discharging> "
+	format-discharging-prefix = "Battery: "
+	
+	ramp-capacity-0 = " Ã¯ÂÂ"
+	ramp-capacity-1 = " Ã¯ÂÂ"
+	ramp-capacity-2 = " Ã¯ÂÂ"
+	ramp-capacity-3 = " Ã¯ÂÂ"
+	ramp-capacity-4 = " Ã¯ÂÂ"
+	;ramp-capacity-foreground = #C1C2B2
+	
+	animation-charging-0 = " Ã¯ÂÂ"
+	animation-charging-1 = " Ã¯ÂÂ"
+	animation-charging-2 = " Ã¯ÂÂ"
+	animation-charging-3 = " Ã¯ÂÂ"
+	animation-charging-4 = " Ã¯ÂÂ"
+	;animation-charging-foreground = #C1C2B2
+	animation-charging-framerate = 750
+	
+	
+305dd2aeb11b325de8e53454250af8f7|file:///home/david/polybar/config|150|1|V|dosini
+	modules-left = battery 
+0f2989c9c1255fd768f8e5d9b1d73505|file:///home/david/.config/polybar/config.ini|165|52|v|dosini
+	backlight
+c4bb89fd3716947c8e1531f59bc95cc4|file:///home/david/.config/polybar/config.ini|165|43|v|dosini
+	 battery
+2147dcece1d7f0ea03c2f7fbf22cf102|file:///home/david/.config/polybar/config.ini|59|1|V|dosini
+	dock = true
+c350c0a77568cffb9e61504d2e2d7103|file:///home/david/.config/polybar/config.ini|138|1|V|dosini
+	font-2 = "xos4 Terminus:size=18;1"
+a5f18e34a25fa68eb317977c047b1099|file:///home/david/.config/herbstluftwm/autostart|28|42|v|sh
+	nvim $(fzf)
+ab464ea4d73c56b0bdacdde3ce50a6de|file:///home/david/.config/polybar/modules.ini|91|1|v|dosini
+	
+	[module/backlight]
+	type = internal/xbacklight
+	
+	; Use the following command to list available cards:
+	; $ ls -1 /sys/class/backlight/
+	card = intel_backlight
+	
+	; Available tags:
+	;   <label> (default)
+	;   <ramp>
+	;   <bar>
+	format = <ramp> <label>
+	
+	; Available tokens:
+	;   %percentage% (default)
+	label = %percentage%%
+	
+	; Only applies if <ramp> is used
+	
+	ramp-0 = 
+	ramp-1 = 
+	ramp-2 = 
+	ramp-3 = 
+	ramp-4 = 
+	
+	; Only applies if <bar> is used
+	;;bar-width = 10
+	;;bar-indicator = |
+	;;bar-fill = ─
+	;;bar-empty = ─
+	
+	;; _-_-_-_-_-_-_-_-_-_
+b14b18b040a9d93ad3760927e417591f|file:///home/david/.config/polybar/modules.ini|92|1|v|dosini
+	
+	[module/battery]
+	type = internal/battery
+	
+	; This is useful in case the battery never reports 100% charge
+	full-at = 99
+	
+	; Use the following command to list batteries and adapters:
+	; $ ls -1 /sys/class/power_supply/
+	battery = BAT1
+	adapter = ACAD
+	
+	; If an inotify event haven't been reported in this many
+	; seconds, manually poll for new values.
+	;
+	; Needed as a fallback for systems that don't report events
+	; on sysfs/procfs.
+	;
+	; Disable polling by setting the interval to 0.
+	;
+	; Default: 5
+	poll-interval = 2
+	
+	; see "man date" for details on how to format the time string
+	; NOTE: if you want to use syntax tags here you need to use %%{...}
+	; Default: %H:%M:%S
+	time-format = %H:%M
+	
+	; Available tags:
+	;   <label-charging> (default)
+	;   <bar-capacity>
+	;   <ramp-capacity>
+	;   <animation-charging>
+	format-charging = <animation-charging> <label-charging>
+	;;format-charging-prefix = 
+	; Available tags:
+	;   <label-discharging> (default)
+	;   <bar-capacity>
+	;   <ramp-capacity>
+	;   <animation-discharging>
+	format-discharging = <ramp-capacity> <label-discharging>
+	
+	; Available tags:
+	;   <label-full> (default)
+	;   <bar-capacity>
+	;   <ramp-capacity>
+	;format-full = <ramp-capacity> <label-full>
+	
+	; Available tokens:
+	;   %percentage% (default)
+	;   %time%
+	;   %consumption% (shows current charge rate in watts)
+	
+	label-charging = %percentage%%
+	
+	; Available tokens:
+	;   %percentage% (default)
+	;   %time%
+	;   %consumption% (shows current discharge rate in watts)
+	label-discharging = %percentage%%
+	
+	; Available tokens:
+	;   %percentage% (default)
+	label-full = Fully Charged
+	
+	; Only applies if <ramp-capacity> is used
+	ramp-capacity-0 = 
+	ramp-capacity-1 = 
+	ramp-capacity-2 = 
+	ramp-capacity-3 = 
+	ramp-capacity-4 = 
+	ramp-capacity-5 = 
+	ramp-capacity-6 = 
+	ramp-capacity-7 = 
+	ramp-capacity-8 = 
+	ramp-capacity-9 = 
+	
+	; Only applies if <bar-capacity> is used
+	;bar-capacity-width = 10
+	
+	; Only applies if <animation-charging> is used
+	animation-charging-0 = 
+	animation-charging-1 = 
+	animation-charging-2 = 
+	animation-charging-3 = 
+	animation-charging-4 = 
+	animation-charging-5 = 
+	animation-charging-6 = 
+	animation-charging-7 = 
+	animation-charging-8 = 
+	
+	; Framerate in milliseconds
+	animation-charging-framerate = 750
+	
+	; Only applies if <animation-discharging> is used
+	;;animation-discharging-0 = 
+	;;animation-discharging-1 = 
+	;;animation-discharging-2 = 
+	;;animation-discharging-3 = 
+	;;animation-discharging-4 = 
+	;;animation-discharging-5 = 
+	;;animation-discharging-6 = 
+	;;animation-discharging-7 = 
+	;;animation-discharging-8 = 
+	
+	; Framerate in milliseconds
+	;animation-discharging-framerate = 500
+	
+	;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+	
+	
+e7e4eb7dab5680b6f812989c33719c46|file:///home/david/.config/polybar/modules.ini|90|1|v|dosini
+	;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+	-_-_-_-_-_-_-_-_-_-_-_-_
+	;;[module/bspwm]
+	;;type = internal/bspwm
+	
+	; Only show workspaces defined on the same output as the bar
+	; NOTE: The bspwm and XRandR monitor names must match, which they do by default.
+	; Default: true
+	;;pin-workspaces = true
+	
+	; Output mode flags after focused state label
+	; Default: false
+	;;inline-mode = false
+	
+	; Create click handler used to focus workspace
+	; Default: true
+	;;enable-click = false
+	
+	; Create scroll handlers used to cycle workspaces
+	; Default: true
+	;;enable-scroll = false
+	
+	; Set the scroll cycle direction 
+	; Default: true
+	;;reverse-scroll = false
+	
+	; Use fuzzy (partial) matching on labels when assigning 
+	; icons to workspaces
+	; Example: code;♚ will apply the icon to all workspaces 
+	; containing 'code' in the label
+	; Default: false
+	;;fuzzy-match = true
+	
+	; ws-icon-[0-9]+ = label;icon
+	; Note that the label needs to correspond with the bspwm workspace name
+	;;ws-icon-0 = code;♚
+	;;ws-icon-1 = office;♛
+	;;ws-icon-2 = graphics;♜
+	;;ws-icon-3 = mail;♝
+	;;ws-icon-4 = web;♞
+	;;ws-icon-default = ♟
+	
+	; Available tags:
+	;   <label-monitor>
+	;   <label-state> - gets replaced with <label-(focused|urgent|occupied|empty)>
+	;   <label-mode> - gets replaced with <label-(monocle|tiled|fullscreen|floating|locked|sticky|private)>
+	; Default: <label-state>
+	;;format = <label-state> <label-mode>
+	
+	; Available tokens:
+	;   %name%
+	; Default: %name%
+	;;label-monitor = %name%
+	
+	; If any values for label-dimmed-N are defined, the workspace/mode
+	; colors will get overridden with those values if the monitor is out of focus
+	; To only override workspaces in a specific state, use:
+	;   label-dimmed-focused
+	;   label-dimmed-occupied
+	;   label-dimmed-urgent
+	;   label-dimmed-empty
+	;;label-dimmed-foreground = #555
+	;;label-dimmed-underline = ${bar/top.background}
+	;;label-dimmed-focused-background = #f00
+	
+	; Available tokens:
+	;   %name%
+	;   %icon%
+	;   %index%
+	; Default: %icon%  %name%
+	;;label-focused = %icon%
+	;;label-focused-foreground = #ffffff
+	;;label-focused-background = #3f3f3f
+	;;label-focused-underline = #fba922
+	
+	; Available tokens:
+	;   %name%
+	;   %icon%
+	;   %index%
+	; Default: %icon%  %name%
+	;;label-occupied = %icon%
+	;;label-occupied-underline = #555555
+	
+	; Available tokens:
+	;   %name%
+	;   %icon%
+	;   %index%
+	; Default: %icon%  %name%
+	;;label-urgent = %icon%
+	;;label-urgent-foreground = #000000
+	;;label-urgent-background = #bd2c40
+	;;label-urgent-underline = #9b0a20
+	
+	; Available tokens:
+	;   %name%
+	;   %icon%
+	;   %index%
+	; Default: %icon%  %name%
+	;;label-empty = %icon%
+	;;label-empty-foreground = #55
+	
+	; The following labels will be used to indicate the layout/mode
+	; for the focused workspace. Requires <label-mode>
+	;
+	; Available tokens:
+	;   None
+	;label-monocle = 
+	;label-tiled = 
+	;label-fullscreen = 
+	;label-floating = 
+	;label-pseudotiled = P
+	;label-locked = 
+	;label-locked-foreground = #bd2c40
+	;label-sticky = 
+	;label-sticky-foreground = #fba922
+	;label-private = 
+	;label-private-foreground = #bd2c40
+	
+	; Separator in between workspaces
+	;;label-separator = |
+	;;label-separator-padding = 2
+	;;label-separator-foreground = #ffb52a
+	
+	;
+a7b80d6a5c688e4db461380540f7ad52|file:///home/david/.config/polybar/modules.ini|142|1|V|dosini
+	time = 🕑%I:%M %p
+65f52b6b3bffaf91a19df3caf2d7d7c2|file:///home/david/.config/polybar/modules.ini|146|1|V|dosini
+	time-alt =  %Y-%m-%d%
+7f0ce9781999e1d98b33399c834e9fe2|file:///home/david/.config/polybar/modules.ini|135|1|v|dosini
+	interval = 1.0
+	
+	; See "http://en.cppreference.com/w/cpp/io/manip/put_time" for details on how to format the date string
+	; NOTE: if you want to use syntax tags here you need to use %%{...}
+	;;date = %Y-%m-%d%
+	date = "%{T0}%m//%d%{T4}   "
+	; Optional time format
+	time = "%{T0}  %H//%M%{T4}  " 
+	; if `date-alt` or `time-alt` is defined, clicking
+	; the module will toggle between formats
+	;;date-alt = %A, %d %B %Y
+	time-alt = %H:%M:%S
+	; Available tags:
+	;   <label> (default)
+	format = <label>
+	
+	; Available tokens:
+	;   %date%
+	;   %time%
+	; Default: %date%
+	label = %time%
+	
+	
+0e8689a38dc7ee4ab78207af2048605c|file:///home/david/.config/polybar/modules.ini|151|1|V|dosini
+	format-foreground = ${colors.red}
+e41636fa9225a81c966bc06546ed38db|file:///home/david/.config/polybar/modules.ini|150|1|V|dosini
+	format-background = ${colors.background}
+45362a3517abb8e7c219d40cdfcfb364|file:///home/david/.config/polybar/modules.ini|146|1|V|dosini
+	format-prefix-foreground = ${colors.foreground-alt}
+7868540b39a398b4b0d6fe5f8c4d1481|file:///home/david/.config/polybar/modules.ini|136|1|V|dosini
+	type = internal/date
+5691cd5528ce550909cc58b90d7bfa98|file:///home/david/.config/polybar/modules.ini|602|1|v|dosini
+	
+	; Sink to be used, if it exists (find using `pacmd list-sinks`, name field)
+	; If not, uses default sink
+	sink = alsa_output.pci-0000_12_00.3.analog-stereo
+	
+	; Use PA_VOLUME_UI_MAX (~153%) if true, or PA_VOLUME_NORM (100%) if false
+	; Default: true
+	use-ui-max = true
+	
+	; Interval for volume increase/decrease (in percent points)
+	; Default: 5
+	interval = 5
+	
+	; Available tags:
+	;   <label-volume> (default)
+	;   <ramp-volume>
+	;   <bar-volume>
+	format-volume = <ramp-volume> <label-volume>
+	
+	; Available tags:
+	;   <label-muted> (default)
+	;   <ramp-volume>
+	;   <bar-volume>
+	;format-muted = <label-muted>
+	
+	; Available tokens:
+	;   %percentage% (default)
+	;label-volume = %percentage%%
+	
+	; Available tokens:
+	;   %percentage% (default)
+	label-muted =  Muted
+	label-muted-foreground = #666
+	
+	; Only applies if <ramp-volume> is used
+	ramp-volume-0 = 
+	ramp-volume-1 = 
+	ramp-volume-2 = 
+	ramp-volume-3 = 
+	ramp-volume-4 = 
+	
+	
+de70aa7222b3d2b81b92d6df12c2be4d|file:///home/david/.config/polybar/modules.ini|360|1|V|dosini
+	format-prefix =🐏
+67e139fee67f73b5399661767194e4f1|file:///home/david/.config/polybar/modules.ini|413|1|V|dosini
+	host = 127.0.0.1
+e73363bd82715aadfb52cb8888fd5b66|file:///home/david/.config/polybar/modules.ini|410|1|v|dosini
+	
+	; Host where mpd is running (either ip or domain name)
+	; Can also be the full path to a unix socket where mpd is running.
+	port = 6600
+	;;password = mysecretpassword
+	
+	; Seconds to sleep between progressbar/song timer sync
+	; Default: 1
+	interval = 2
+	
+	; Available tags:
+	;   <label-song> (default)
+	;   <label-time>
+	;   <bar-progress>
+	;   <toggle> - gets replaced with <icon-(pause|play)>
+	;   <toggle-stop> - gets replaced with <icon-(stop|play)>
+	;   <icon-random>
+	;   <icon-repeat>
+	;   <icon-repeatone> (deprecated)
+	;   <icon-single> - Toggle playing only a single song. Replaces <icon-repeatone>
+	;   <icon-consume>
+	;   <icon-prev>
+	;   <icon-stop>
+	;   <icon-play>
+	;   <icon-pause>
+	;   <icon-next>
+	;   <icon-seekb>
+	;   <icon-seekf>
+	format-online = 🎶<label-song>  <icon-prev> <toggle> <icon-next>
+	
+	;format-playing = ${self.format-online}
+	;format-paused = ${self.format-online}
+	;format-stopped = ${self.format-online}
+	
+	; Available tags:
+	;   <label-offline>
+	;format-offline = <label-offline>
+	
+	; Available tokens:
+	;   %artist%
+	;   %album-artist%
+	;   %album%
+	;   %date%
+	;   %title%
+	; Default: %artist% - %title%
+	label-song =  "%artist% - %title%"
+	label-song-maxlen = 25
+	label-song-ellipsis = true
+	
+	; Available tokens:
+	;   %elapsed%
+	;   %total%
+	; Default: %elapsed% / %total%
+	;;abel-time = %elapsed% / %total%
+	
+	; Available tokens:
+	;   None
+	label-offline = "MPD is offline"
+	
+	; Only applies if <icon-X> is used
+	icon-play = 
+	icon-pause = 
+	icon-stop = 
+	icon-prev = 
+	icon-next = 
+	icon-seekb = ⏪
+	icon-seekf = ⏩
+	icon-random = 🔀
+	icon-repeat = 🔁
+	icon-repeatone = 🔂
+	icon-single = 🔂
+	icon-consume = ✀
+	
+	; Used to display the state of random/repeat/repeatone/single
+	; Only applies if <icon-[random|repeat|repeatone|single]> is used
+	;;toggle-on-foreground = #ff
+	;;toggle-off-foreground = #55
+	
+	; Only applies if <bar-progress> is used
+	;;bar-progress-width = 45
+	;;bar-progress-indicator = |
+	;;bar-progress-fill = ─
+	;;bar-progress-empty = ─
+b4fd754c874749f08fbbc3187c67f4e2|file:///home/david/.config/polybar/modules.ini|410|1|V|dosini
+	type = internal/mpd
+d77550e30aef4038c53e2df7c8984df2|file:///home/david/.config/polybar/modules.ini|415|1|V|dosini
+	password = mysecretpassword
+3bbf6d8cd86d2f2d8ff14d38d4350c68|file:///home/david/.config/polybar/modules.ini|423|1|V|dosini
+	format-online = <icon-prev> <icon-seekb> <icon-stop> <toggle> <icon-seekf> <icon-next>  <icon-repeat> <icon-random>  <bar-progress>
+b3bcaa46d6c22d34c0f00015f145b836|file:///home/david/.config/polybar/modules.ini|422|1|V|dosini
+	;   <icon-seekf>
+21c53f886336e45711e32cd26ea802f2|file:///home/david/.config/polybar/modules.ini|421|1|V|dosini
+	;   <icon-seekb>
+7311b8c23d61581116aba34614b5d5b2|file:///home/david/.config/polybar/modules.ini|427|1|v|dosini
+	
+	[module/wireless-network]
+	type = internal/network
+	interface = wlp39s0
+	
+	; Normal Module
+	[module/network]
+	type = internal/network
+	interface = wlp39s0
+	
+	; Seconds to sleep between updates
+	; Default: 1
+	interval = 1.0
+	
+	; Test connectivity every Nth update
+	; A value of 0 disables the feature
+	; NOTE: Experimental (needs more testing)
+	; Default: 0
+	;ping-interval = 3
+	
+	; @deprecated: Define min width using token specifiers (%downspeed:min% and %upspeed:min%)
+	; Minimum output width of upload/download rate
+	; Default: 3
+	;;udspeed-minwidth = 5
+	
+	; Accumulate values from all interfaces
+	; when querying for up/downspeed rate
+	; Default: false
+	accumulate-stats = true
+	
+	; Consider an `UNKNOWN` interface state as up.
+	; Some devices have an unknown state, even when they're running
+	; Default: false
+	unknown-as-up = true
+	
+	; Available tags:
+	;   <label-connected> (default)
+	;   <ramp-signal>
+	format-connected = <ramp-signal> <label-connected>
+	
+	; Available tags:
+	;   <label-disconnected> (default)
+	format-disconnected = <label-disconnected>
+	
+	; Available tags:
+	;   <label-connected> (default)
+	;   <label-packetloss>
+	;   <animation-packetloss>
+	;;format-packetloss = <animation-packetloss> <label-connected>
+	
+	; Available tokens:
+	;   %ifname%    [wireless+wired]
+	;   %local_ip%  [wireless+wired]
+	;   %local_ip6% [wireless+wired]
+	;   %essid%     [wireless]
+	;   %signal%    [wireless]
+	;   %upspeed%   [wireless+wired]
+	;   %downspeed% [wireless+wired]
+	;   %linkspeed% [wired]
+	; Default: %ifname% %local_ip%
+	label-connected = "%essid% %downspeed:8% %upspeed:8%"
+	;;label-connected-foreground = #eefafafa
+	
+	; Available tokens:
+	;   %ifname%    [wireless+wired]
+	; Default: (none)
+	label-disconnected =  "Not Connected"
+	;;label-disconnected-foreground = #66ffffff
+	
+	; Available tokens:
+	;   %ifname%    [wireless+wired]
+	;   %local_ip%  [wireless+wired]
+	;   %local_ip6% [wireless+wired]
+	;   %essid%     [wireless]
+	;   %signal%    [wireless]
+	;   %upspeed%   [wireless+wired]
+	;   %downspeed% [wireless+wired]
+	;   %linkspeed% [wired]
+	; Default: (none)
+	;label-packetloss = %essid%
+	;label-packetloss-foreground = #eefafafa
+	
+	; Only applies if <ramp-signal> is used
+	ramp-signal-0 = 
+	ramp-signal-1 = 
+	ramp-signal-2 = 
+	ramp-signal-3 = 
+	ramp-signal-4 = 
+	
+	; Only applies if <animation-packetloss> is used
+	;;animation-packetloss-0 = ⚠
+	;;animation-packetloss-0-foreground = #ffa64c
+	;;animation-packetloss-1 = ⚠
+	;;animation-packetloss-1-foreground = #000000
+	; Framerate in milliseconds
+	;;animation-packetloss-framerate = 500
+	
+	
+df03a16945e6cb429bfab7cdb7b7f864|file:///home/david/.config/polybar/config|1|2|v|
+	bar/white]
+	
+	;------------;
+	; DIMENSIONS ;
+	;------------;
+	
+	width = 100%
+	height = 20
+	offset-y = 0
+	offset-x = 0
+	
+	border-top-size = 10
+	border-bottom-size = 0
+	border-right-size = 10
+	border-left-size = 10
+	
+	;----------;
+	; LOCATION ;
+	;----------;
+	
+	bottom = false
+	monitor = 
+	wm-restack = none
+	override-redirect = false
+	
+	;-------;
+	; FONTS ;
+	;-------;
+	
+	font-0 = Hack:size=10;3
+	font-1 = "Font Awesome 5 Free:style=Solid:pixelsize=12;3"
+	font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=12;3"
+	font-3 = "Font Awesome 5 Brands:pixelsize=12;3"
+	
+	;--------;
+	; COLORS ;
+	;--------;
+	
+	background = 0
+	foreground = #c5a9f9
+	border-color = 0
+	
+	;---------------;
+	; MISCELLANEOUS ;
+	;---------------;
+	
+	fixed-center = true
+	padding-left = 2 
+	padding-right = 2
+	module-margin = 1.5
+	
+	modules-left = volume backlight battery mpd
+	modules-center = i3
+	modules-right = wlan cpu date time
+	
+	tray-position = none
+	tray-detached = true
+	
+	[bar/mpd]
+	;------------;
+	; DIMENSIONS ;
+	;------------;
+	
+	width = 100%
+	height = 20
+	offset-y = 0
+	offset-x = 0
+	
+	border-top-size = 10
+	border-bottom-size = 0
+	border-right-size = 10
+	border-left-size = 10
+	
+	;----------;
+	; LOCATION ;
+	;----------;
+	
+	bottom = true
+	monitor = 
+	wm-restack = none
+	override-redirect = false
+	
+	;-------;
+	; FONTS ;
+	;-------;
+	
+	font-0 = Hack:size=10;3
+	font-1 = "Font Awesome 5 Free:style=Solid:pixelsize=10;3"
+	font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=10;3"
+	font-3 = "Font Awesome 5 Brands:pixelsize=10;3"
+	
+	;--------;
+	; COLORS ;
+	;--------;
+	
+	background = 0
+	foreground = #c5a9f9
+	border-color = 0
+	
+	;---------------;
+	; MISCELLANEOUS ;
+	;---------------;
+	
+	fixed-center = true
+	padding-left = 2 
+	padding-right = 2
+	module-margin = 1.5
+	
+	;modules-left = 
+	modules-center = mpd
+	;modules-right = 
+	
+	
+	;---------;
+	; MODULES ;
+	;---------;
+	
+	[module/i3]
+	type = internal/i3
+	
+	pin-workspaces = true
+	strip-wsnumbers = true
+	enable-scroll = false
+	
+	label-unfocused-foreground = #afafaf
+	label-focused-foreground = #c5a9f9
+	label-urgent-foreground = #ff0000
+	
+	[module/time]
+	type = internal/date
+	
+	interval = 1.0
+	
+	date =  %H:%M
+	
+	[module/date]
+	type = internal/date
+	date =  %e %B - %A
+	label = %date%
+	
+	
+	[module/battery]
+	type = internal/battery
+	
+	battery = BAT1
+	
+	poll-interval = 1
+	
+	full-at = 95
+	
+	label-discharging = %percentage%%
+	label-charging = %percentage%%
+	label-full = %percentage%%
+	
+	format-discharging = <ramp-capacity> <label-discharging>
+	format-full = <ramp-capacity> <label-full>
+	format-charging =  <label-charging>
+	
+	ramp-capacity-0 = 
+	ramp-capacity-1 = 
+	ramp-capacity-2 = 
+	ramp-capacity-3 = 
+	ramp-capacity-4 = 
+	
+	[module/volume]
+	type = internal/volume
+	
+	format-volume = <ramp-volume> <label-volume>
+	format-muted =  0%
+	
+	ramp-volume-0 = 
+	ramp-volume-1 = 
+	ramp-volume-2 = 
+	
+	[module/mpd]
+	type = internal/mpd
+	
+	label-offline = mpd is offline
+	format-online = <icon-prev> <toggle> <icon-next> <label-song>
+	format-offline = <label-offline>
+	host = 127.0.0.1
+	port = 6600
+	icon-prev = 
+	icon-stop = 
+	icon-play = 
+	icon-pause = 
+	icon-next = 
+	
+	label-song-maxlen = 25
+	label-song-ellipsis = true
+	
+	bar-progress-width = 10
+	bar-progress-indicator = |
+	bar-progress-fill = ─
+	bar-progress-empty = ─
+	
+	[module/backlight]
+	type = internal/backlight
+	
+	; Use the following command to list available cards:
+	; $ ls -1 /sys/class/backlight/
+	card = radeon_bl0
+	
+	format = <ramp> <label>
+	
+	label = %percentage%%
+	
+	ramp-0 = 
+	ramp-1 = 
+	ramp-2 = 
+	
+	[module/wlan]
+	type = internal/network
+	
+	interface = wlp2s0
+	
+	interval = 5
+	
+	label-connected =  %essid%
+	label-disconnected =  Not Connected
+	
+	[module/cpu]
+	type = internal/cpu
+	label =  %percentage%%
+	
+	
+	[module/memory]
+	type = internal/memory
+	label =  %gb_used%
+	
+	[module/network]
+	type = internal/network
+	interface = wlp2s0
+	label-connected =  %downspeed% |  %upspeed%
+	
+	[bar/float]
+	
+	inherit = bar/white
+	
+	background = #ffffff
+	
+	t
+4de26e48b8b7a26bb99ba7edbb12581a|file:///home/david/.config/polybar/config|1|1|V|
+	[ray-position = center
+9046ba62ffc6fa3c22ed8a417c00750b|file:///home/david/.config/polybar/launch.sh|1|1|v|sh
+	#!/usr/bin/env sh
+	
+	# Terminate already running bar instances
+	killall -q polybar
+	
+	# Wait until the processes have been shut down
+	while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
+	
+	# Launch bar1 and bar2
+	polybar example &
+	#polybar bar2 &
+	
+	echo "Bars launched..."
+558426fe02208d3a2655451f84871ed4|file:///home/david/.config/polybar/config|833|1|v|dosinin
+	
+	[module/pavolume]
+	type = custom/script
+	tail = true
+	label = %output%
+	exec = ~/.config/polybar/scripts/pavolume.sh --listen
+	click-right = exec pavucontrol
+	click-left = ~/.config/polybar/scripts/pavolume.sh --togmute
+	scroll-up = ~/.config/polybar/scripts/pavolume.sh --up
+	scroll-down = ~/.config/polybar/scripts/pavolume.sh --down
+	format-foreground = ${colors.background}
+	format-background = #FFE585
+	
+	
+	
+bc8a18b6650ecb345e4f89e37818585b|file:///home/david/.config/polybar/config|832|1|V|dosinin
+	################################################################################
+2efd91b5f76b5a165c11010671bc9ba9|file:///home/david/.config/polybar/config|1|1|v|dosinin
+	[bar/white
+	
+	;------------;
+	; DIMENSIONS ;
+	;------------;
+	
+	width = 100%
+	height = 20
+	offset-y = 0
+	offset-x = 0
+	
+	border-top-size = 10
+	border-bottom-size = 0
+	border-right-size = 10
+	border-left-size = 10
+	
+	;----------;
+	; LOCATION ;
+	;----------;
+	
+	bottom = true
+	monitor = 
+	wm-restack = none
+	override-redirect = false
+	
+	;-------;
+	; FONTS ;
+	;-------;
+	
+	font-0 = Hack:size=10;3
+	font-1 = "Font Awesome 5 Free:style=Solid:pixelsize=12;3"
+	font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=12;3"
+	font-3 = "Font Awesome 5 Brands:pixelsize=12;3"
+	
+	;--------;
+	; COLORS ;
+	;--------;
+	
+	background = 0
+	foreground = #c5a9f9
+	border-color = 0
+	
+	;---------------;
+	; MISCELLANEOUS ;
+	;---------------;
+	
+	fixed-center = true
+	padding-left = 2 
+	padding-right = 2
+	module-margin = 1.5
+	
+	modules-left = volume backlight battery mpd
+	modules-center = i3
+	modules-right = wlan cpu date time
+	
+	tray-position = none
+	tray-detached = true
+	
+	[bar/mpd]
+	;------------;
+	; DIMENSIONS ;
+	;------------;
+	
+	width = 100%
+	height = 20
+	offset-y = 0
+	offset-x = 0
+	
+	border-top-size = 10
+	border-bottom-size = 0
+	border-right-size = 10
+	border-left-size = 10
+	
+	;----------;
+	; LOCATION ;
+	;----------;
+	
+	bottom = true
+	monitor = eDP-1
+	wm-restack = none
+	override-redirect = false
+	
+	;-------;
+	; FONTS ;
+	;-------;
+	
+	font-0 = Hack:size=10;3
+	font-1 = "Font Awesome 5 Free:style=Solid:pixelsize=10;3"
+	font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=10;3"
+	font-3 = "Font Awesome 5 Brands:pixelsize=10;3"
+	
+	;--------;
+	; COLORS ;
+	;--------;
+	
+	background = 0
+	foreground = #c5a9f9
+	border-color = 0
+	
+	;---------------;
+	; MISCELLANEOUS ;
+	;---------------;
+	
+	fixed-center = true
+	padding-left = 2 
+	padding-right = 2
+	module-margin = 1.5
+	
+	;modules-left = 
+	modules-center = mpd
+	;modules-right = 
+	
+	
+	;---------;
+	; MODULES ;
+	;---------;
+	
+	[module/i3]
+	type = internal/i3
+	
+	pin-workspaces = true
+	strip-wsnumbers = true
+	enable-scroll = false
+	
+	label-unfocused-foreground = #afafaf
+	label-focused-foreground = #c5a9f9
+	label-urgent-foreground = #ff0000
+	
+	[module/time]
+	type = internal/date
+	
+	interval = 1.0
+	
+	date =  %H:%M
+	
+	[module/date]
+	type = internal/date
+	date =  %e %B - %A
+	label = %date%
+	
+	
+	[module/battery]
+	type = internal/battery
+	
+	battery = BAT1
+	
+	poll-interval = 1
+	
+	full-at = 95
+	
+	label-discharging = %percentage%%
+	label-charging = %percentage%%
+	label-full = %percentage%%
+	
+	format-discharging = <ramp-capacity> <label-discharging>
+	format-full = <ramp-capacity> <label-full>
+	format-charging =  <label-charging>
+	
+	ramp-capacity-0 = 
+	ramp-capacity-1 = 
+	ramp-capacity-2 = 
+	ramp-capacity-3 = 
+	ramp-capacity-4 = 
+	
+	[module/volume]
+	type = internal/volume
+	
+	format-volume = <ramp-volume> <label-volume>
+	format-muted =  0%
+	
+	ramp-volume-0 = 
+	ramp-volume-1 = 
+	ramp-volume-2 = 
+	
+	[module/mpd]
+	type = internal/mpd
+	
+	label-offline = mpd is offline
+	format-online = <icon-prev> <toggle> <icon-next> <label-song>
+	format-offline = <label-offline>
+	host = 127.0.0.1
+	port = 6600
+	icon-prev = 
+	icon-stop = 
+	icon-play = 
+	icon-pause = 
+	icon-next = 
+	
+	label-song-maxlen = 25
+	label-song-ellipsis = true
+	
+	bar-progress-width = 10
+	bar-progress-indicator = |
+	bar-progress-fill = ─
+	bar-progress-empty = ─
+	
+	[module/backlight]
+	type = internal/backlight
+	
+	; Use the following command to list available cards:
+	; $ ls -1 /sys/class/backlight/
+	card = radeon_bl0
+	
+	format = <ramp> <label>
+	
+	label = %percentage%%
+	
+	ramp-0 = 
+	ramp-1 = 
+	ramp-2 = 
+	
+	[module/wlan]
+	type = internal/network
+	
+	interface = wlp2s0
+	
+	interval = 5
+	
+	label-connected =  %essid%
+	label-disconnected =  Not Connected
+	
+	[module/cpu]
+	type = internal/cpu
+	label =  %percentage%%
+	
+	
+	[module/memory]
+	type = internal/memory
+	label =  %gb_used%
+	
+	[module/network]
+	type = internal/network
+	interface = wlp2s0
+	label-connected =  %downspeed% |  %upspeed%
+	
+	[bar/float]
+	
+	inherit = bar/white
+	
+	background = #ffffff
+	
+	t
+c42c7b5a6ced25a67fb1cf5e24d0f5d9|file:///home/david/.config/polybar/config|1|1|V|dosinin
+	ray-position = center
+04ef27c8baf6e68efd95b3f87bc29a7b|file:///home/david/.config/polybar/config|293|1|v|dosinin
+	
+	[module/arch-aur-updates]
+	type = custom/script
+	exec = ~/.config/polybar/scripts/check-all-updates.sh
+	interval = 1000
+	label = Updates: %output%
+	format-foreground = #ffffff
+	format-background = #F07178
+	format-prefix = "  "
+	format-prefix-foreground = #ffffff
+	
+	
+3c55a802c231541241cbc668cfdcd944|file:///home/david/.config/polybar/config|293|1|v|dosinin
+	
+	[module/aur-updates]
+	type = custom/script
+	exec = cower -u | wc -l
+	interval = 1000
+	label = Aur: %output%
+	format-foreground = ${colors.foreground}
+	format-background = ${colors.background}
+	format-prefix = "  "
+	format-prefix-foreground = #FFBB00
+	format-underline = #FFBB00
+	
+	
+1858c94a3f73a39f203d158d422b1913|file:///home/david/.config/polybar/config|294|1|v|dosinin
+	
+	[module/backlight-acpi]
+	inherit = module/xbacklight
+	type = internal/backlight
+	card = intel_backlight
+	format-foreground = ${colors.foreground}
+	format-background = ${colors.background}
+	format-prefix-foreground = #7D49B6
+	format-prefix-underline = #7D49B6
+	format-underline = #7D49B6
+	################################################################################
+	
+	[module/backlight]
+	;https://github.com/jaagr/polybar/wiki/Module:-backlight
+	
+	type = internal/backlight
+	
+	; Use the following command to list available cards:
+	; $ ls -1 /sys/class/backlight/
+	card = intel_backlight
+	
+	; Available tags:
+	;   <label> (default)
+	;   <ramp>
+	;   <bar>
+	format = <label>
+	format-foreground = ${colors.foreground}
+	format-background = ${colors.background}
+	
+	; Available tokens:
+	;   %percentage% (default)
+	label = %percentage%%
+	
+	; Only applies if <ramp> is used
+	ramp-0 = 🌕
+	ramp-1 = 🌔
+	ramp-2 = 🌓
+	ramp-3 = 🌒
+	ramp-4 = 🌑
+	
+	; Only applies if <bar> is used
+	bar-width = 10
+	bar-indicator = |
+	bar-fill = ─
+	bar-empty = ─
+	
+	################################################################################
+	
+	[module/battery]
+	;https://github.com/jaagr/polybar/wiki/Module:-battery
+	type = internal/battery
+	battery = BAT0
+	adapter = AC0
+	full-at = 100
+	
+	format-charging = <animation-charging> <label-charging>
+	label-charging = %percentage%%
+	label-charging-foreground = #000000
+	format-charging-background = #F07178
+	
+	format-discharging = <ramp-capacity> <label-discharging>
+	label-discharging = %percentage%%
+	label-discharging-foreground = #000000
+	format-discharging-background = #F07178
+	
+	format-full-prefix = " "
+	format-full-prefix-foreground = #000000
+	;format-full-underline = #fff
+	format-foreground = #12345678
+	format-background = #F07178
+	
+	ramp-capacity-0 = 
+	ramp-capacity-1 = 
+	ramp-capacity-2 = 
+	ramp-capacity-3 = 
+	ramp-capacity-4 = 
+	ramp-capacity-foreground = #000000
+	
+	animation-charging-0 = 
+	animation-charging-1 = 
+	animation-charging-2 = 
+	animation-charging-3 = 
+	animation-charging-4 = 
+	animation-charging-foreground = #000000
+	animation-charging-framerate = 750
+	
+	
+cb2fc837392eaf9e0d8cd81bf07c3402|file:///home/david/.config/polybar/config|426|1|V|dosinin
+	icon-2 = 3;
+	icon-3 = 4;
+4ec8b35afe9b2f25da35c138ef401b3e|file:///home/david/.config/polybar/config|427|1|V|dosinin
+	icon-3 = 4;
+	icon-4 = 5;
+e53d96a11db3f8f3d6f5bd2895695c4a|file:///home/david/.config/polybar/config|427|1|V|dosinin
+	icon-3 = 4;
+237638f2091dbb73b5097b88c9ea7e24|file:///home/david/.config/polybar/config|424|1|V|dosinin
+	icon-0 = 1;
+dd36ed291fd057eebb33cd63a73302b1|file:///home/david/.config/polybar/config|428|1|V|dosinin
+	icon-1 = 2;
+a7f8c7068bdcbd737a3e79f6480b9865|file:///home/david/.config/polybar/config|429|1|V|dosinin
+	icon-2 = 3;
+8a16af6297a8448f2e8fc93a2eeb8797|file:///home/david/.config/polybar/config|428|1|V|dosinin
+	icon-4 = 5;
+f772b6292ff0740b96eafad4ba9115f4|file:///home/david/.config/polybar/config|428|1|V|dosinin
+	icon-6 = 7;
+4c97a0f42f080201c87e8f88379a6d61|file:///home/david/.config/polybar/config|430|1|V|dosinin
+	icon-7 = 8;
+3294460d3734a9fd384b6468e52e02b4|file:///home/david/.config/polybar/config|433|1|v|dosinin
+	format = <label-state>
+	label-monitor = %name%
+	
+	label-active = %name%
+	label-active-foreground = ${colors.foreground}
+	label-active-background = ${colors.background}
+	label-active-underline= #6790eb
+	label-active-padding = 1
+	
+	label-occupied = %name%
+	label-occupied-background = ${colors.background}
+	label-occupied-padding = 1
+	
+	label-urgent = %name%
+	label-urgent-foreground = ${colors.foreground}
+	label-urgent-background = ${colors.alert}
+	label-urgent-underline = ${colors.alert}
+	label-urgent-padding = 1
+	
+	label-empty = %name%
+	label-empty-foreground = ${colors.foreground}
+	label-empty-padding = 1
+	format-foreground = ${colors.foreground}
+	format-background = ${colors.background}
+	
+	
+	
+6f9c8f280a0696f798b233fe7f838625|file:///home/david/.config/polybar/config|424|1|v|dosinin
+	icon-0 = WEB; 
+	icon-1 = W;
+	icon-2 = W;
+	icon-3 = W;
+	icon-4 = W;
+	icon-5 = W;
+	#icon-8 = 9;
+	#icon-9 = 10;
+	#
+b5c9bea8839bdd5d16f9f15cabaa6de1|file:///home/david/.config/polybar/config|424|1|V|dosinin
+	icon-default = " "
+66ecb0680ed82c8a762de627f9ae6347|file:///home/david/.config/polybar/config|433|1|V|dosinin
+	icon-9 = 10;
+7e7894e82826c1b0933408950ebe73ae|file:///home/david/.config/polybar/config|432|1|V|dosinin
+	icon-8 = 9;
+db33686a6bd246b63cd6867be06aff7f|file:///home/david/.config/polybar/config|431|1|V|dosinin
+	icon-7 = 8;
+113802bad260d7e0226b025992906021|file:///home/david/.config/polybar/config|430|1|V|dosinin
+	icon-6 = 7;
+f2594982f92355fe334b04efac66835f|file:///home/david/.config/polybar/config|420|1|v|dosinig
+	;extra icons to choose from
+	;http://fontawesome.io/cheatsheet/
+	;       v     
+	
+	
+ecdd236c97792ae51681b81f9e48b4d7|file:///home/david/.config/polybar/config|426|1|v|dosinig
+	
+	format = <label-state>
+	label-monitor = %name%
+	
+	label-active = %name%
+	label-active-foreground = ${colors.foreground}
+	label-active-background = ${colors.background}
+	label-active-underline= #6790eb
+	label-active-padding = 1
+	
+	label-occupied = %name%
+	label-occupied-background = ${colors.background}
+	label-occupied-padding = 1
+	
+	label-urgent = %name%
+	label-urgent-foreground = ${colors.foreground}
+	label-urgent-background = ${colors.alert}
+	label-urgent-underline = ${colors.alert}
+	label-urgent-padding = 1
+	
+	label-empty = %name%
+	label-empty-foreground = ${colors.foreground}
+	label-empty-padding = 1
+	format-foreground = ${colors.foreground}
+	format-background = ${colors.background}
+	
+	
+828c3d3b978f0eebfd0366b1f19dcc30|file:///home/david/.config/polybar/config|420|1|v|dosinig
+	icon-0 = TTY;
+	icon-1 = WEB;
+	icon-2 = DEV;
+	icon-3 = MED;
+	icon-4 = DISCORD;
+	icon-5 = HERB;
+	
+	
+6e2067e28171067674e4b1dc7d8f3671|file:///home/david/.config/polybar/config|412|1|v|dosinig
+	[module/ewmh]
+	type = internal/xworkspaces
+	
+	pin-workspaces = true
+	enable-click = true
+	enable-scroll = true
+	reverse-scroll = true
+	
+	icon-0 = TTY;
+	icon-1 = WEB;
+	icon-2 = DEV;
+	icon-3 = MED;
+	icon-4 = DISCORD;
+	icon-5 = HERB;
+	
+	; Available tags:
+	;   <label-monitor>
+	;   <label-state> - gets replaced with <label-(active|urgent|occupied|empty)>
+	; Default: <label-state>
+	format = <label-state>
+	
+	; Available tokens:
+	;   %name%
+	; Default: %name%
+	label-monitor = %name%
+	
+	; Available tokens:
+	;   %name%
+	;   %icon%
+	;   %index%
+	; Default: %icon%  %name%
+	label-active = %icon% %name%
+	label-active-foreground = #ffffff
+	label-active-background = #3f3f3f
+	label-active-underline = #fba922
+	
+	; Available tokens:
+	;   %name%
+	;   %icon%
+	;   %index%
+	; Default: %icon%  %name%
+	label-occupied = %icon%
+	label-occupied-underline = #555555
+	
+	; Available tokens:
+	;   %name%
+	;   %icon%
+	;   %index%
+	; Default: %icon%  %name%
+	label-urgent = %icon%
+	label-urgent-foreground = #000000
+	label-urgent-background = #bd2c40
+	label-urgent-underline = #9b0a20
+	
+	; Available tokens:
+	;   %name%
+	;   %icon%
+	;   %index%
+	; Default: %icon%  %name%
+	label-empty = %icon%
+	label-empty-foreground = #55
+	
+	
+285caa2990f7a3b719edc538e0808d2d|file:///home/david/.config/polybar/config|436|1|v|dosinig
+	
+	label-empty = %icon%
+	label-empty-foreground = ${colors.foreground-alt}
+	label-empty-background = ${colors.ws}
+	label-empty-padding = 1
+	
+	label-urgent = %icon%
+	label-urgent-background = ${colors.alert}
+	label-urgent-padding = 1
+	
+	label-inactive = %icon%
+	label-inactive-padding = 1
+	
+15d8382ec6180867e3655e641e57c4c9|file:///home/david/.config/polybar/config|429|1|V|dosinig
+	format = <label-state>
+06cfdcbfd6fb18c42520dc1461d045a0|file:///home/david/.config/polybar/config|428|1|v|dosinig
+	
+	label-active = %icon%
+	label-active-foreground = ${colors.foreground}
+	label-active-background = ${colors.ws}
+	label-active-padding = 1
+	label-active-font = 1
+	; Available tags:
+	;   <label-monitor>
+	;   <label-state> - gets replaced with <label-(active|urgent|occupied|empty)>
+	; Default: <label-state>
+	format = <label-state>
+	
+	; Available tokens:
+	;   %name%
+	; Default: %name%
+	label-monitor = %name%
+	
+	; Available tokens:
+	;   %name%
+	;   %icon%
+	;   %index%
+	; Default: %icon%  %name%
+	label-active = %icon% %name%
+	label-active-foreground = #ffffff
+	label-active-background = #3f3f3f
+	label-active-underline = #fba922
+	
+	; Available tokens:
+	;   %name%
+	;   %icon%
+	;   %index%
+	; Default: %icon%  %name%
+	label-occupied = %icon%
+	label-occupied-underline = #555555
+	
+	; Available tokens:
+	;   %name%
+	;   %icon%
+	;   %index%
+	; Default: %icon%  %name%
+	label-urgent = %icon%
+	label-urgent-foreground = #000000
+	label-urgent-background = #bd2c40
+	label-urgent-underline = #9b0a20
+	
+	; Available tokens:
+	;   %name%
+	;   %icon%
+	;   %index%
+	; Default: %icon%  %name%
+	label-empty = %icon%
+	label-empty-foreground = #55
+	
+	
+4d6fb253a473cd03fc2302e475c487cb|file:///home/david/.config/polybar/config|413|1|v|dosinig
+	
+	pin-workspaces = false
+	enable-click = true
+	enable-scroll = true
+	format-padding = 0
+	format-font = 1
+	icon-0 = 1;
+	icon-1 = 2;
+	icon-2 = 3;
+	icon-3 = 4;
+	icon-4 = 5;
+	icon-5 = 6;
+	icon-6 = 7;
+	icon-7 = 8;
+	icon-default = ""
+	
+	; Available tags:
+	;   <label-monitor>
+	;   <label-state> - gets replaced with <label-(active|urgent|occupied|empty)>
+	; Default: <label-state>
+	format = <label-state>
+	
+	; Available tokens:
+	;   %name%
+	; Default: %name%
+	label-monitor = %name%
+	
+	; Available tokens:
+	;   %name%
+	;   %icon%
+	;   %index%
+	; Default: %icon%  %name%
+	label-active = %icon% %name%
+	label-active-foreground = #ffffff
+	label-active-background = #3f3f3f
+	label-active-underline = #fba922
+	
+	; Available tokens:
+	;   %name%
+	;   %icon%
+	;   %index%
+	; Default: %icon%  %name%
+	label-occupied = %icon%
+	label-occupied-underline = #555555
+	
+	; Available tokens:
+	;   %name%
+	;   %icon%
+	;   %index%
+	; Default: %icon%  %name%
+	label-urgent = %icon%
+	label-urgent-foreground = #000000
+	label-urgent-background = #bd2c40
+	label-urgent-underline = #9b0a20
+	
+	; Available tokens:
+	;   %name%
+	;   %icon%
+	;   %index%
+	; Default: %icon%  %name%
+	label-empty = %icon%
+	label-empty-foreground = #55
+edf50e8551d13da5c3db3c9f9e1da7a0|file:///home/david/.config/polybar/config|435|1|V|dosinig
+	#icon-5 = 6;
+	icon-default = ♟
+0a677f9aba10d8f94bdefc72552d2ac1|file:///home/david/.config/polybar/config|109|1|V|dosinig
+	font-5 = "Noto Sans Symbols2:pixelsize=10;1"
+985fc8d1bd24e71c06e456bf77142036|file:///home/david/.config/polybar/config|105|1|V|dosinig
+	font-1 = "UbuntuMono Nerd Font:size=16;3"
+209b9a58b681876f0c2f0ce0c43d7286|file:///home/david/.config/polybar/config|60|16|v|dosini
+	bspwm
+826ed607bafcaa1ca580d7bf07c907bf|file:///home/david/.config/polybar/config|57|1|V|dosini
+	font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+3b8d8520e44df85be2685c6ca6d3bc5e|file:///home/david/.config/polybar/config|442|1|v|dosini
+	; Available tags:
+	;   <label-monitor>
+	;   <label-state> - gets replaced with <label-(active|urgent|occupied|empty)>
+	; Default: <label-state>
+	format = <label-state>
+	
+	; Available tokens:
+	;   %name%
+	; Default: %name%
+	label-monitor = %name%
+	
+	; Available tokens:
+	;   %name%
+	;   %icon%
+	;   %index%
+	; Default: %icon%  %name%
+	label-active = %icon% %name%
+	label-active-foreground = #ffffff
+	label-active-background = #3f3f3f
+	label-active-underline = #fba922
+	
+	; Available tokens:
+	;   %name%
+	;   %icon%
+	;   %index%
+	; Default: %icon%  %name%
+	label-occupied = %icon%
+	label-occupied-underline = #555555
+	
+	; Available tokens:
+	;   %name%
+	;   %icon%
+	;   %index%
+	; Default: %icon%  %name%
+	label-urgent = %icon%
+	label-urgent-foreground = #000000
+	label-urgent-background = #bd2c40
+	label-urgent-underline = #9b0a20
+	
+	; Available tokens:
+	;   %name%
+	;   %icon%
+	;   %index%
+	; Default: %icon%  %name%
+	label-empty = %icon%
+	label-empty-foreground = #55
+	
+	
+74cf8aff4a3afe7f58a14d8b1715b15f|file:///home/david/.config/polybar/config|456|1|V|dosini
+	label-empty-foreground = ${colors.foreground}
+e0e20561917261febb107f248038435f|file:///home/david/.config/polybar/config|455|1|V|dosini
+	label-urgent-underline = ${colors.urgent}
+748eef5e4fd3361116744ae16628654c|file:///home/david/.config/polybar/config|454|1|V|dosini
+	label-urgent-foreground = ${colors.urgent}
+e8ca1558de3ba5d392366736b9b41960|file:///home/david/.config/polybar/config|453|1|V|dosini
+	label-occupied-underline = ${colors.moderate}
+0619a415e69c8b7e82418fac88a16e93|file:///home/david/.config/polybar/config|452|1|V|dosini
+	label-active-underline = ${colors.blue}
+17ef014e890ff5e6679921243c08b7ca|file:///home/david/.config/polybar/config|451|1|V|dosini
+	label-active-foreground = ${colors.blue}
+0b81a135193686306c6e2a6c2c09c5bc|file:///home/david/.config/polybar/config|454|1|V|dosini
+	label-occupied = %icon%
+4b0d9d32dceac2898277f5ea04e0d3b7|file:///home/david/.config/polybar/config|458|1|V|dosini
+	label-empty = %icon%
+011ca897f507ec7943e0d2e1855394b4|file:///home/david/.config/polybar/config|443|1|v|dosini
+	label-active = %icon% 
+	label-occupied = %icon%
+	label-urgent = %icon% 
+	label-empty = %icon% 
+	label-occupied-padding = 1
+	label-empty-padding = 1
+	label-urgent-padding = 1
+	label-active-padding = 1
+	label-active-foreground = #ffffff
+	label-active-background = #3f3f3f
+	label-active-underline = #fba922
+	label-occupied-underline = #555555
+	label-urgent-foreground = #000000
+	label-urgent-background = #bd2c40
+	label-urgent-underline = #9b0a20
+	label-empty-foreground = #55
+	
+	
+acbe9aa3400af0c156bb1ded75bd89c8|file:///home/david/.config/polybar/config|448|1|V|dosini
+	label-active-underline= #6790eb
+082987cf36e9a86f7f20c43c80f2cd05|file:///home/david/.config/herbstluftwm/autostart|74|1|v|sh
+	hc set focus_follows_mouse 1
+	hc set default_frame_layout 3
+	hc set_layout grid
+	
+	
+ecf07b0e25a6e85febfc0bcebfa00bb0|file:///home/david/.config/polybar/config|461|1|V|dosini
+	format-foreground = ${colors.foreground}
+0ca75d4844d72bb2237d2a7c0efe9ec8|file:///home/david/.config/polybar/config|446|1|v|dosini
+	label-active-foreground = ${colors.foreground}
+	label-active-background = ${colors.background}
+	label-active-padding = 2
+	label-occupied = %icon%
+	label-occupied-background = ${colors.background}
+	label-occupied-foreground = ${colors.foreground}
+	label-occupied-padding = 2
+	label-urgent = %icon%
+	label-urgent-foreground = ${colors.foreground}
+	label-urgent-background = ${colors.alert}
+	label-urgent-underline = ${colors.alert}
+	label-urgent-padding = 2 
+	label-empty = %icon%
+	label-empty-foreground = ${colors.foreground}
+	label-empty-padding = 2
+	
+	
+b78c76464a1f494775d3b5652f4ce3a6|file:///home/david/.config/polybar/config|444|1|V|dosini
+	label-monitor = %name%
+25142963efd08f73e1a08cd2665799be|file:///home/david/.config/polybar/config|442|1|V|dosini
+	label-active = %icon%
+c1ee3891123d52a13382e1348c04bec3|file:///home/david/.config/polybar/config|440|14|v|dosini
+	
+	
+	icon-default = 
+1b1f1516971ba7bdf2c1ff97a88d0060|file:///home/david/.config/polybar/config|442|19|v|dosini
+	
+	format = <label-state>
+	format-background =${colors.background} 
+	
+	label-active = %icon% 
+	label-occupied = %icon% 
+	label-urgent = %icon% 
+	label-empty = %icon% 
+	label-occupied-padding = 0
+	label-empty-padding = 0
+	label-urgent-padding = 0
+	label-active-padding = 1
+	label-active-foreground = ${colors.primary}
+	label-active-underline = ${colors.secondary}
+	label-occupied-underline = ${colors.third}
+	label-urgent-foreground = ${colors.foreground-alt}
+	label-urgent-underline = ${colors.alert}
+	label-empty-foreground = ${colors.foreground}
+	
+	
+c3634186ba6255efaecf99c9d62a1b7f|file:///home/david/.config/polybar/config|85|1|v|dosini
+	
+	[module/xkeyboard]
+	type = internal/xkeyboard
+	blacklist-0 = num lock
+	
+	format-prefix = " "
+	format-prefix-foreground = ${colors.foreground-alt}
+	format-prefix-underline = ${colors.secondary}
+	
+	label-layout = %layout%
+	label-layout-underline = ${colors.secondary}
+	
+	label-indicator-padding = 2
+	label-indicator-margin = 1
+	label-indicator-background = ${colors.secondary}
+	label-indicator-underline = ${colors.secondary}
+	
+	
+d072b7837a8b8b1fe990be443c5c5355|file:///home/david/.config/polybar/config|95|1|v|dosini
+	
+	[module/bspwm]
+	type = internal/bspwm
+	
+	label-focused = %index%
+	label-focused-background = ${colors.background-alt}
+	label-focused-underline= ${colors.primary}
+	label-focused-padding = 2
+	
+	label-occupied = %index%
+	label-occupied-padding = 2
+	
+	label-urgent = %index%!
+	label-urgent-background = ${colors.alert}
+	label-urgent-padding = 2
+	
+	label-empty = %index%
+	label-empty-foreground = ${colors.foreground-alt}
+	label-empty-padding = 2
+	
+	; Separator in between workspaces
+	; label-separator = |
+	
+	[module/i3]
+	type = internal/i3
+	format = <label-state> <label-mode>
+	index-sort = true
+	wrapping-scroll = false
+	
+	; Only show workspaces on the same output as the bar
+	;pin-workspaces = true
+	
+	label-mode-padding = 2
+	label-mode-foreground = #000
+	label-mode-background = ${colors.primary}
+	
+	; focused = Active workspace on focused monitor
+	label-focused = %index%
+	label-focused-background = ${colors.background-alt}
+	label-focused-underline= ${colors.primary}
+	label-focused-padding = 2
+	
+	; unfocused = Inactive workspace on any monitor
+	label-unfocused = %index%
+	label-unfocused-padding = 2
+	
+	; visible = Active workspace on unfocused monitor
+	label-visible = %index%
+	label-visible-background = ${self.label-focused-background}
+	label-visible-underline = ${self.label-focused-underline}
+	label-visible-padding = ${self.label-focused-padding}
+	
+	; urgent = Workspace with urgency hint set
+	label-urgent = %index%
+	label-urgent-background = ${colors.alert}
+	label-urgent-padding = 2
+	
+	; Separator in between workspaces
+	; label-separator = |
+	
+	
+0288ce777ded14a9cc91a0e223469d9d|file:///home/david/.config/polybar/config|108|1|v|dosini
+	
+	[module/xbacklight]
+	type = internal/xbacklight
+	
+	format = <label> <bar>
+	label = BL
+	
+	bar-width = 10
+	bar-indicator = |
+	bar-indicator-foreground = #fff
+	bar-indicator-font = 2
+	bar-fill = ─
+	bar-fill-font = 2
+	bar-fill-foreground = #9f78e1
+	bar-empty = ─
+	bar-empty-font = 2
+	bar-empty-foreground = ${colors.foreground-alt}
+	
+	[module/backlight-acpi]
+	inherit = module/xbacklight
+	type = internal/backlight
+	card = intel_backlight
+	
+	
+47734cfb7a6d4618550b1359b2ce7760|file:///home/david/.config/polybar/config|146|1|v|dosini
+	
+	[module/eth]
+	type = internal/network
+	interface = 
+	interval = 3.0
+	
+	format-connected-underline = #55aa55
+	format-connected-prefix = " "
+	format-connected-prefix-foreground = ${colors.foreground-alt}
+	label-connected = %local_ip%
+	
+	format-disconnected =
+	;format-disconnected = <label-disconnected>
+	;format-disconnected-underline = ${self.format-connected-underline}
+	;label-disconnected = %ifname% disconnected
+	;label-disconnected-foreground = ${colors.foreground-alt}
+	
+	
+e565111d76a7905fec593bf19574ae13|file:///home/david/.config/polybar/config|217|1|v|dosini
+	
+	[module/battery]
+	type = internal/battery
+	battery = BAT0
+	adapter = ADP1
+	full-at = 98
+	
+	format-charging = <animation-charging> <label-charging>
+	format-charging-underline = #ffb52a
+	
+	format-discharging = <animation-discharging> <label-discharging>
+	format-discharging-underline = ${self.format-charging-underline}
+	
+	format-full-prefix = " "
+	format-full-prefix-foreground = ${colors.foreground-alt}
+	format-full-underline = ${self.format-charging-underline}
+	
+	ramp-capacity-0 = 
+	ramp-capacity-1 = 
+	ramp-capacity-2 = 
+	ramp-capacity-foreground = ${colors.foreground-alt}
+	
+	animation-charging-0 = 
+	animation-charging-1 = 
+	animation-charging-2 = 
+	animation-charging-foreground = ${colors.foreground-alt}
+	animation-charging-framerate = 750
+	
+	animation-discharging-0 = 
+	animation-discharging-1 = 
+	animation-discharging-2 = 
+	animation-discharging-foreground = ${colors.foreground-alt}
+	animation-discharging-framerate = 750
+	
+	
+e2b24d925c8616dabe5e27f2c3a18485|file:///home/david/.config/polybar/config|106|1|v|dosini
+	
+	[bar/bar]
+	monitor = HDMI-A-0
+	width = 50%
+	height = 60
+	offset-x = 25%
+	;offset-y = 1%
+	radius = 6.0
+	fixed-center = false
+	bottom = true
+	dpi = 196
+	monitor-struct = true
+	background = ${colors.background}
+	foreground = ${colors.foreground}
+	
+	line-size = 3
+	line-color = #685CB9
+	
+	border-size = 4
+	border-color = #685CB9
+	
+	padding-left = 3
+	padding-right = 3
+	
+	module-margin-left = 1
+	module-margin-right = 2
+	
+	font-0 = Ubuntu Nerd Font :pixelsize=10;1
+	font-1 = Font Awesome 5 Free:pixelsize=10;1
+	
+	modules-left = ewmh 
+	modules-center = mpd 
+	modules-right = filesystem memory cpu temperature date
+	
+	tray-position = right
+	tray-padding = 2
+	;tray-background = #0063ff
+	
+	;wm-restack = bspwm
+	;wm-restack = i3
+	
+	override-redirect = true
+	
+	;scroll-up = bspwm-desknext
+	;scroll-down = bspwm-deskprev
+	
+	;scroll-up = i3wm-wsnext
+	;scroll-down = i3wm-wsprev
+	
+	cursor-click = pointer
+	cursor-scroll = ns-resize
+	
+	
+98d674e356db54537a4f71400fc155cc|file:///home/david/.config/polybar/config|75|1|V|dosini
+	;scroll-down = i3wm-wsprev
+60bf1d3833cdc6dd4c6646844875df02|file:///home/david/.config/polybar/config|74|1|V|dosini
+	;scroll-down = bspwm-deskpr;scroll-up = i3wm-wsnext
+	
+1998a3e773614d043ea39f7ea1e44618|file:///home/david/.config/polybar/config|74|1|V|dosini
+	;scroll-down = bspwm-deskpr;scroll-up = i3wm-wsnext
+450fbecd5966d2ed87e93f5dd21ee326|file:///home/david/.config/polybar/config|73|1|V|dosini
+	;scroll-up = bspwm-desknext
+151a352412d592dcc0e864cf71071324|file:///home/david/.config/polybar/config|69|1|V|dosini
+	;wm-restack = i3
+41c01f117ca0637b5e16efca743b639c|file:///home/david/.config/polybar/config|68|1|V|dosini
+	;wm-restack = bspwm
+f35f9d51c93627db036a95ff7836b75b|file:///home/david/.config/polybar/config|31|1|v|dosini
+	[bar/bar]
+	monitor = HDMI-A-0
+	width = 50%
+	height = 60
+	offset-x = 25%
+	;offset-y = 1%
+	radius = 6.0
+	fixed-center = false
+	bottom = true
+	dpi = 196
+	monitor-struct = true
+	background = ${colors.background}
+	foreground = ${colors.foreground}
+	
+	line-size = 3
+	line-color = #685CB9
+	
+	border-size = 4
+	border-color = #685CB9
+	
+	padding-left = 3
+	padding-right = 3
+	
+	module-margin-left = 1
+	module-margin-right = 2
+	
+	font-0 = Ubuntu Nerd Font :pixelsize=10;1
+	font-1 = Font Awesome 5 Free:pixelsize=10;1
+	
+	modules-left = ewmh 
+	modules-center = mpd 
+	modules-right = filesystem memory cpu temperature date
+	
+	tray-position = right
+	tray-padding = 2
+	;tray-background = #0063ff
+	
+	override-redirect = true
+	
+	cursor-click = pointer
+	cursor-scroll = ns-resize
+	
+	
+	
+c1001a7b5b400421e9a2aa1807d318d4|file:///home/david/.config/polybar/config|31|1|V|dosini
+	[bar/bar]
+	monitor = HDMI-A-0
+e2d1d751fb57d84de021550db150a114|file:///home/david/.config/polybar/config|31|1|v|dosini
+	[bar/bar]
+	monitor = HDMI-A-0
+	width = 50%
+	height = 60
+	offset-x = 25%
+	;offset-y = 1%
+	radius = 6.0
+	fixed-center = false
+	bottom = true
+	dpi = 196
+	monitor-struct = true
+	background = ${colors.background}
+	foreground = ${colors.foreground}
+	
+	line-size = 3
+	line-color = #685CB9
+	
+	border-size = 4
+	border-color = #685CB9
+	
+	padding-left = 3
+	padding-right = 3
+	
+	module-margin-left = 1
+	module-margin-right = 2
+	
+	font-0 = Ubuntu Nerd Font :pixelsize=10;1
+	font-1 = Font Awesome 5 Free:pixelsize=10;1
+	
+	modules-left = ewmh 
+	modules-center = mpd 
+	modules-right = filesystem memory cpu temperature date
+	
+	tray-position = right
+	tray-padding = 2
+	;tray-background = #0063ff
+	
+	override-redirect = true
+	
+	cursor-click = pointer
+	cursor-scroll = ns-resize
+	
+	
+128b08071115c1b1c6a6dd3bb1aa93ae|file:///home/david/.config/polybar/launch.sh|8|1|v|sh
+	
+	for m in $(polybar --list-monitors | cut -d":" -f1); do
+		WIRELESS=$(ls /sys/class/net/ | grep ^wl | awk 'NR==1{print $1}') MONITOR=$m polybar --reload bar bar-herbs &
+	do
+83daa71ee9b6dd6784f47572dcf80539|file:///home/david/.config/polybar/config|30|1|v|dosini
+	
+	[bar/bar]
+	monitor = HDMI-A-0
+	width = 30%
+	height = 60
+	offset-x = 35%
+	;offset-y = 1%
+	radius = 6.0
+	fixed-center = false
+	bottom = true
+	dpi = 196
+	monitor-struct = true
+	background = ${colors.background}
+	foreground = ${colors.foreground}
+	
+	line-size = 3
+	line-color = #685CB9
+	
+	border-size = 4
+	border-color = #685CB9
+	
+	padding-left = 3
+	padding-right = 3
+	
+	module-margin-left = 1
+	module-margin-right = 2
+	
+	font-0 = Ubuntu Nerd Font :pixelsize=10;1
+	font-1 = Font Awesome 5 Free:pixelsize=10;1
+	
+	#modules-left = ewmh 
+	modules-center = mpd 
+	modules-right = filesystem memory cpu temperature date
+	
+	tray-position = right
+	tray-padding = 2
+	;tray-background = #0063ff
+	
+	override-redirect = true
+	
+	cursor-click = pointer
+	cursor-scroll = ns-resize
+	
+	
+f0f4f5a1de38ee2531bbea28f89f1add|file:///home/david/.config/polybar/config|64|1|v|dosini
+	tray-position = right
+	tray-padding = 2
+	;tray-background = #0063ff
+	
+	override-redirect = true
+	
+	cursor-click = pointer
+	cursor-scroll = ns-resize
+	
+	
+b1625659f5fd4a4fc616bdc66c2ebfaa|file:///home/david/.config/polybar/config|63|1|v|dosini
+	
+	tray-position = right
+	tray-padding = 2
+	;tray-background = #0063ff
+	
+	override-redirect = true
+	
+	cursor-click = pointer
+	cursor-scroll = ns-resize
+	
+	
+95e071f143ce7afe24b506f13695071d|file:///home/david/.config/polybar/config|155|1|V|dosini
+	override-redirect = true
+24ca451263e04d150c2e0069900a75de|file:///home/david/.config/polybar/config|151|1|V|dosini
+	tray-position = right
+552452fb311e66804ea1968d3c537472|file:///home/david/.config/polybar/config|151|1|V|dosini
+	tray-padding = 2
+c0a90eadc941d114f37599acdb780c23|file:///home/david/.config/polybar/config|104|1|V|dosini
+	cursor-click = pointer
+aa97799e7f3ef8582b982a6727be4e03|file:///home/david/.config/polybar/config|104|1|V|dosini
+	cursor-scroll = ns-resize
+5a8c53f95f31d650f23e1cedaf79ff3e|file:///home/david/.config/nvim/configs/plugin-settings.vim|376|1|v|vim
+	
+	" You can set up fzf window using a Vim command (Neovim or latest Vim 8 required)
+	let g:fzf_layout = { 'window': 'enew' }
+	let g:fzf_layout = { 'window': '-tabnew' }
+	let g:fzf_layout = { 'window': '10new' }
+	
+	
+8d1b69dd9bdc9df4a8073c7a8193c7af|file:///home/david/.config/nvim/configs/plugin-settings.vim|406|1|v|vim
+	
+	
+	
+	
+	
+	
+	
+	
+	
+73040a0b5bd7c87df3e144ab531c7c93|file:///home/david/.config/nvim/configs/plugin-settings.vim|405|1|v|vim
+	
+	" Customize fzf colors to match your color scheme
+	let g:fzf_colors =
+	\ { 'fg':      ['fg', 'Normal'],
+	  \ 'bg':      ['bg', 'Normal'],
+	  \ 'hl':      ['fg', 'Comment'],
+	  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+	  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+	  \ 'hl+':     ['fg', 'Statement'],
+	  \ 'info':    ['fg', 'PreProc'],
+	  \ 'border':  ['fg', 'Ignore'],
+	  \ 'prompt':  ['fg', 'Conditional'],
+	  \ 'pointer': ['fg', 'Exception'],
+	  \ 'marker':  ['fg', 'Keyword'],
+	  \ 'spinner': ['fg', 'Label'],
+	  \ 'header':  ['fg', 'Comment'] }

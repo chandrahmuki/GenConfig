@@ -53,6 +53,7 @@ Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
 
 " Smart completion (to work with CoC)
 "Plug 'zxqfl/tabnine-vim'
+Plug 'ap/vim-css-color'
 
 "langage support packs
 Plug 'sheerun/vim-polyglot'

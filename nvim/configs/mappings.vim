@@ -51,6 +51,10 @@ vnoremap <Tab> >gv
 " Shift+Tab to unindent in visual mode.
 vnoremap <S-Tab> <gv
 
+"" Move visual block
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+
 " Text alignment
 nnoremap <Leader>Al :left<CR>
 nnoremap <Leader>Ac :center<CR>
@@ -97,9 +101,9 @@ map <leader>p :FZFMru<cr>
 nnoremap <silent> <leader>fb :Buffers<CR>
 nnoremap <silent> <leader>fc :Colors<CR>
 nnoremap <silent> <leader>ff :Files<CR>
-nnoremap <silent> <leader>fg :Rg<CR>
+nnoremap <silent> <leader>rg :Rg<CR>
 nnoremap <silent> <leader>f :FZF ~ <CR>
-
+nnoremap <silent><leader>fy :BLines<CR>
 "python Exec
 nnoremap <buffer> <F9> :exec '!python' shellescape(@%, 1)<cr>
 

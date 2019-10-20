@@ -31190,3 +31190,815 @@ Oct 09 13:32 : exception: OutputThread could not get realtime scheduling, contin
 Oct 09 14:41 : client: [0] closed
 Oct 09 14:41 : exception: Failed to play on "pulse audio" (pulse): disconnected
 Oct 09 14:41 : player: played "Maurice Ravel/Ravel - Le Tombeau de Couperin.m4a"
+Oct 15 10:52 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 15 10:52 : exception: Failed to decode /mnt/769688239687E1CB/music/Maurice Ravel/Ravel - Le Tombeau de Couperin.m4a
+Oct 15 10:52 : exception: inotify_add_watch() has failed: No such file or directory
+Oct 15 10:52 : exception: nested: Failed to open '/mnt/769688239687E1CB/music/Maurice Ravel/Ravel - Le Tombeau de Couperin.m4a': No such file or directory
+Oct 15 10:52 : player: played "Maurice Ravel/Ravel - Le Tombeau de Couperin.m4a"
+Oct 15 10:52 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 15 10:52 : client: [0] opened from 127.0.0.1:55048
+Oct 15 10:52 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 15 13:49 : player: played "Maurice Ravel/02 Ma Mère L_Oie_ II. Laideronnette, Impératrice Des Pagodes.mp3"
+Oct 15 16:56 : client: [0] closed
+Oct 15 16:56 : client: [1] opened from 127.0.0.1:56850
+Oct 15 17:15 : player: played "Maurice Ravel/Ravel - Le Tombeau de Couperin.m4a"
+Oct 15 17:24 : player: played "Prince/_-S6Y1gohk5-A.mp3"
+Oct 15 17:44 : player: played "Maurice Ravel/Maurice Ravel_ Ma mère l_Oye (suite).m4a"
+Oct 15 17:47 : player: played "Maurice Ravel/02 Ma Mère L_Oie_ II. Laideronnette, Impératrice Des Pagodes.mp3"
+Oct 15 17:51 : player: played "Maurice Ravel/03 Ma Mère L_Oie_ III. Les Entretiens de la Belle Et de la Bête.mp3"
+Oct 15 17:54 : player: played "Maurice Ravel/04 Ma Mère L_Oie_ IV. Le Jardin Féerique.mp3"
+Oct 15 18:06 : player: played "chihei/Sora/Ana-3dPs0EpcFnI.mp3"
+Oct 15 21:49 : player: played "Maurice Ravel/Ravel - Le Tombeau de Couperin.m4a"
+Oct 15 21:58 : player: played "Prince/_-S6Y1gohk5-A.mp3"
+Oct 15 22:18 : player: played "Maurice Ravel/Maurice Ravel_ Ma mère l_Oye (suite).m4a"
+Oct 15 22:21 : player: played "Maurice Ravel/02 Ma Mère L_Oie_ II. Laideronnette, Impératrice Des Pagodes.mp3"
+Oct 15 22:25 : player: played "Maurice Ravel/03 Ma Mère L_Oie_ III. Les Entretiens de la Belle Et de la Bête.mp3"
+Oct 15 22:28 : player: played "Maurice Ravel/04 Ma Mère L_Oie_ IV. Le Jardin Féerique.mp3"
+Oct 15 22:40 : player: played "chihei/Sora/Ana-3dPs0EpcFnI.mp3"
+Oct 16 02:57 : client: [1] closed
+Oct 16 02:57 : player: played "Movies OST/GITS/Ghost in the Shell Ambience - 6 Hour Long Ambient Edit, Compilation-aylxPWZOsDo.mp3"
+Oct 16 11:43 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 16 11:43 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 16 11:43 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 16 11:43 : client: [0] opened from 127.0.0.1:33914
+Oct 16 11:45 : player: played "Akira Yamaoka/Silent Hill 2 Original Soundtracks/15 Magdalene.mp3"
+Oct 16 11:47 : player: played "chihei/over the moon/01 Morning Arrive On the Island.mp3"
+Oct 16 11:54 : player: played "chihei/over the moon/03 Confession.mp3"
+Oct 16 11:57 : player: played "chihei/over the moon/04 The Moon Reflecting On the Surface of the Ocean.mp3"
+Oct 16 11:59 : player: played "chihei/over the moon/06 A Quiet Pond.mp3"
+Oct 16 12:02 : player: played "chihei/over the moon/07 The Distant Sound of a Bustle.mp3"
+Oct 16 12:07 : player: played "chihei/over the moon/08 Calm.mp3"
+Oct 16 12:11 : player: played "chihei/over the moon/10 Haze From the River.mp3"
+Oct 16 12:14 : player: played "chihei/over the moon/11 The Dance of the Sea.mp3"
+Oct 16 12:22 : player: played "chihei/Ghostly Garden/01 Shadows.mp3"
+Oct 16 12:26 : player: played "chihei/Ghostly Garden/02 Voices.mp3"
+Oct 16 12:32 : player: played "chihei/Ghostly Garden/03 Cave.mp3"
+Oct 16 12:36 : player: played "chihei/Ghostly Garden/04 Slight Trail.mp3"
+Oct 16 12:39 : player: played "chihei/Ghostly Garden/05 Voices II.mp3"
+Oct 16 12:45 : player: played "chihei/Ghostly Garden/06 Stone Wall Island.mp3"
+Oct 16 12:46 : player: played "chihei/Ghostly Garden/07 Sacred Flowers.mp3"
+Oct 16 12:57 : player: played "chihei/Ghostly Garden/08 Ghostly Garden.mp3"
+Oct 16 13:16 : player: played "Maurice Ravel/Ravel - Le Tombeau de Couperin.m4a"
+Oct 16 13:34 : player: played "Maurice Ravel/Ravel - Le Tombeau de Couperin.m4a"
+Oct 16 21:44 : player: played "chihei/over the moon/01 Morning Arrive On the Island.mp3"
+Oct 16 21:51 : player: played "chihei/over the moon/03 Confession.mp3"
+Oct 16 21:54 : player: played "chihei/over the moon/04 The Moon Reflecting On the Surface of the Ocean.mp3"
+Oct 16 21:55 : player: played "chihei/over the moon/06 A Quiet Pond.mp3"
+Oct 16 21:59 : player: played "chihei/over the moon/07 The Distant Sound of a Bustle.mp3"
+Oct 16 22:03 : player: played "chihei/over the moon/08 Calm.mp3"
+Oct 16 22:08 : player: played "chihei/over the moon/10 Haze From the River.mp3"
+Oct 16 22:11 : player: played "chihei/over the moon/11 The Dance of the Sea.mp3"
+Oct 16 23:04 : player: played "Maurice Ravel/02 Ma Mère L_Oie_ II. Laideronnette, Impératrice Des Pagodes.mp3"
+Oct 17 00:57 : player: played "Movies OST/blade runner/Vangelis - Blade Runner Soundtrack (Remastered 2017)-k3fz6CC45ok.mp3"
+Oct 17 02:05 : client: [0] closed
+Oct 17 02:05 : player: played "Movies OST/GITS/Ghost in the Shell Ambience - 6 Hour Long Ambient Edit, Compilation-aylxPWZOsDo.mp3"
+Oct 17 13:53 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 17 13:53 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 17 13:53 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 17 13:53 : client: [0] opened from 127.0.0.1:51206
+Oct 17 14:13 : player: played "Maurice Ravel/Ravel - Le Tombeau de Couperin.m4a"
+Oct 17 14:22 : player: played "Prince/_-S6Y1gohk5-A.mp3"
+Oct 17 14:34 : client: [0] closed
+Oct 17 14:41 : player: played "Maurice Ravel/Maurice Ravel_ Ma mère l_Oye (suite).m4a"
+Oct 17 14:45 : player: played "Maurice Ravel/02 Ma Mère L_Oie_ II. Laideronnette, Impératrice Des Pagodes.mp3"
+Oct 17 14:49 : player: played "Maurice Ravel/03 Ma Mère L_Oie_ III. Les Entretiens de la Belle Et de la Bête.mp3"
+Oct 17 14:52 : player: played "Maurice Ravel/04 Ma Mère L_Oie_ IV. Le Jardin Féerique.mp3"
+Oct 17 15:04 : player: played "chihei/Sora/Ana-3dPs0EpcFnI.mp3"
+Oct 17 21:12 : player: played "Movies OST/GITS/Ghost in the Shell Ambience - 6 Hour Long Ambient Edit, Compilation-aylxPWZOsDo.mp3"
+Oct 17 21:28 : player: played "chihei/Sora/Ilse-qKs88zNaWVw.mp3"
+Oct 18 08:59 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 18 08:59 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 18 08:59 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 18 09:01 : player: played "chihei/Sora/Ilse-qKs88zNaWVw.mp3"
+Oct 18 09:07 : player: played "chihei/Sora/Kisa-GMGy1LcN0S0.mp3"
+Oct 18 09:18 : player: played "chihei/Sora/Luisa-ZTvFd8QpKVc.mp3"
+Oct 18 09:22 : player: played "Maurice Ravel/Maurice Ravel_ Ma mère l_Oye (suite).m4a"
+Oct 18 09:22 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 18 09:22 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 18 09:22 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 18 09:33 : client: [0] opened from 127.0.0.1:48266
+Oct 18 09:34 : client: [1] opened from 127.0.0.1:48272
+Oct 18 09:38 : client: [1] closed
+Oct 18 09:38 : client: [2] opened from 127.0.0.1:48306
+Oct 18 09:38 : client: [2] closed
+Oct 18 09:38 : client: [3] opened from 127.0.0.1:48308
+Oct 18 09:38 : client: [4] opened from 127.0.0.1:48310
+Oct 18 09:39 : client: [4] closed
+Oct 18 09:43 : client: [3] closed
+Oct 18 09:43 : client: [5] opened from 127.0.0.1:48390
+Oct 18 09:43 : client: [5] closed
+Oct 18 09:43 : client: [6] opened from 127.0.0.1:48392
+Oct 18 09:43 : client: [7] opened from 127.0.0.1:48394
+Oct 18 09:44 : client: [7] closed
+Oct 18 09:45 : client: [6] closed
+Oct 18 09:45 : client: [8] opened from 127.0.0.1:48396
+Oct 18 09:45 : client: [9] opened from 127.0.0.1:48398
+Oct 18 09:45 : client: [9] closed
+Oct 18 09:45 : client: [10] opened from 127.0.0.1:48400
+Oct 18 09:45 : client: [10] closed
+Oct 18 09:46 : client: [8] closed
+Oct 18 09:46 : client: [11] opened from 127.0.0.1:48402
+Oct 18 09:46 : client: [12] opened from 127.0.0.1:48404
+Oct 18 09:47 : client: [12] closed
+Oct 18 09:47 : client: [13] opened from 127.0.0.1:48406
+Oct 18 09:47 : client: [13] closed
+Oct 18 09:52 : client: [11] closed
+Oct 18 09:52 : client: [14] opened from 127.0.0.1:48434
+Oct 18 09:52 : client: [15] opened from 127.0.0.1:48436
+Oct 18 09:52 : client: [15] closed
+Oct 18 09:54 : client: [14] closed
+Oct 18 09:54 : client: [16] opened from 127.0.0.1:48440
+Oct 18 09:54 : client: [16] closed
+Oct 18 09:54 : client: [17] opened from 127.0.0.1:48442
+Oct 18 09:54 : client: [17] closed
+Oct 18 09:54 : client: [18] opened from 127.0.0.1:48444
+Oct 18 09:54 : client: [18] closed
+Oct 18 09:54 : client: [19] opened from 127.0.0.1:48446
+Oct 18 09:56 : client: [19] closed
+Oct 18 09:56 : client: [20] opened from 127.0.0.1:48448
+Oct 18 09:57 : client: [20] closed
+Oct 18 09:57 : client: [21] opened from 127.0.0.1:48450
+Oct 18 09:58 : client: [21] closed
+Oct 18 09:59 : client: [22] opened from 127.0.0.1:48468
+Oct 18 09:59 : client: [23] opened from 127.0.0.1:48472
+Oct 18 10:00 : client: [23] closed
+Oct 18 10:03 : client: [22] closed
+Oct 18 10:03 : client: [24] opened from 127.0.0.1:48542
+Oct 18 10:04 : client: [24] closed
+Oct 18 10:04 : client: [25] opened from 127.0.0.1:48544
+Oct 18 10:04 : client: [25] closed
+Oct 18 10:05 : client: [26] opened from 127.0.0.1:48552
+Oct 18 10:06 : client: [26] closed
+Oct 18 10:06 : client: [27] opened from 127.0.0.1:48560
+Oct 18 10:06 : client: [27] closed
+Oct 18 10:06 : client: [28] opened from 127.0.0.1:48562
+Oct 18 10:07 : client: [28] closed
+Oct 18 10:07 : client: [29] opened from 127.0.0.1:48564
+Oct 18 10:07 : client: [29] closed
+Oct 18 10:07 : client: [30] opened from 127.0.0.1:48566
+Oct 18 10:17 : client: [30] closed
+Oct 18 10:17 : client: [31] opened from 127.0.0.1:48748
+Oct 18 10:18 : client: [31] closed
+Oct 18 10:18 : client: [32] opened from 127.0.0.1:48758
+Oct 18 10:18 : client: [32] closed
+Oct 18 10:18 : client: [33] opened from 127.0.0.1:48760
+Oct 18 10:18 : client: [33] closed
+Oct 18 10:18 : client: [34] opened from 127.0.0.1:48762
+Oct 18 10:19 : client: [34] closed
+Oct 18 10:19 : client: [35] opened from 127.0.0.1:48778
+Oct 18 10:21 : client: [35] closed
+Oct 18 10:21 : client: [36] opened from 127.0.0.1:48786
+Oct 18 10:21 : client: [36] closed
+Oct 18 10:21 : client: [37] opened from 127.0.0.1:48788
+Oct 18 10:21 : client: [37] closed
+Oct 18 10:21 : client: [38] opened from 127.0.0.1:48790
+Oct 18 10:23 : client: [38] closed
+Oct 18 10:23 : client: [39] opened from 127.0.0.1:48820
+Oct 18 10:23 : client: [39] closed
+Oct 18 10:23 : client: [40] opened from 127.0.0.1:48822
+Oct 18 10:23 : client: [40] closed
+Oct 18 10:23 : client: [41] opened from 127.0.0.1:48824
+Oct 18 10:23 : client: [41] closed
+Oct 18 10:23 : client: [42] opened from 127.0.0.1:48826
+Oct 18 10:24 : client: [42] closed
+Oct 18 10:24 : client: [43] opened from 127.0.0.1:48832
+Oct 18 10:26 : client: [43] closed
+Oct 18 10:26 : client: [44] opened from 127.0.0.1:48876
+Oct 18 10:26 : client: [44] closed
+Oct 18 10:26 : client: [45] opened from 127.0.0.1:48878
+Oct 18 10:26 : client: [46] opened from 127.0.0.1:48880
+Oct 18 10:27 : client: [45] closed
+Oct 18 10:27 : client: [46] closed
+Oct 18 10:27 : client: [47] opened from 127.0.0.1:48886
+Oct 18 10:27 : client: [48] opened from 127.0.0.1:48888
+Oct 18 10:27 : client: [48] closed
+Oct 18 10:27 : client: [47] closed
+Oct 18 10:27 : client: [49] opened from 127.0.0.1:48890
+Oct 18 10:27 : client: [50] opened from 127.0.0.1:48892
+Oct 18 10:27 : client: [50] closed
+Oct 18 10:28 : client: [49] closed
+Oct 18 10:28 : client: [51] opened from 127.0.0.1:48894
+Oct 18 10:36 : client: [51] closed
+Oct 18 10:36 : client: [52] opened from 127.0.0.1:48950
+Oct 18 10:38 : client: [52] closed
+Oct 18 10:38 : client: [53] opened from 127.0.0.1:48954
+Oct 18 10:39 : client: [53] closed
+Oct 18 10:39 : client: [54] opened from 127.0.0.1:48960
+Oct 18 10:39 : client: [54] closed
+Oct 18 10:39 : client: [55] opened from 127.0.0.1:48966
+Oct 18 10:40 : client: [55] closed
+Oct 18 10:40 : client: [56] opened from 127.0.0.1:48968
+Oct 18 10:47 : client: [56] closed
+Oct 18 10:47 : client: [57] opened from 127.0.0.1:49042
+Oct 18 10:52 : client: [57] closed
+Oct 18 10:52 : client: [58] opened from 127.0.0.1:49096
+Oct 18 10:53 : client: [59] opened from 127.0.0.1:49098
+Oct 18 10:53 : client: [59] closed
+Oct 18 10:54 : client: [58] closed
+Oct 18 10:54 : client: [60] opened from 127.0.0.1:49104
+Oct 18 10:54 : client: [60] closed
+Oct 18 10:54 : client: [61] opened from 127.0.0.1:49106
+Oct 18 10:54 : client: [61] closed
+Oct 18 10:55 : client: [62] opened from 127.0.0.1:49108
+Oct 18 10:55 : client: [62] closed
+Oct 18 10:55 : client: [63] opened from 127.0.0.1:49110
+Oct 18 11:03 : client: [63] closed
+Oct 18 11:03 : client: [64] opened from 127.0.0.1:49166
+Oct 18 11:03 : player: played "Maurice Ravel/Ravel - Le Tombeau de Couperin.m4a"
+Oct 18 11:03 : client: [65] opened from 127.0.0.1:49172
+Oct 18 11:03 : client: [65] closed
+Oct 18 11:03 : client: [64] closed
+Oct 18 11:03 : client: [66] opened from 127.0.0.1:49174
+Oct 18 11:04 : client: [67] opened from 127.0.0.1:49176
+Oct 18 11:04 : client: [67] closed
+Oct 18 11:04 : client: [66] closed
+Oct 18 11:04 : client: [68] opened from 127.0.0.1:49178
+Oct 18 11:04 : client: [68] closed
+Oct 18 11:04 : client: [69] opened from 127.0.0.1:49180
+Oct 18 11:04 : client: [70] opened from 127.0.0.1:49182
+Oct 18 11:05 : client: [69] closed
+Oct 18 11:05 : client: [70] closed
+Oct 18 11:05 : client: [71] opened from 127.0.0.1:49184
+Oct 18 11:05 : client: [71] closed
+Oct 18 11:05 : client: [72] opened from 127.0.0.1:49188
+Oct 18 11:06 : client: [72] closed
+Oct 18 11:06 : client: [73] opened from 127.0.0.1:49202
+Oct 18 11:22 : player: played "Maurice Ravel/Ravel - Le Tombeau de Couperin.m4a"
+Oct 18 11:39 : client: [73] closed
+Oct 18 11:39 : client: [74] opened from 127.0.0.1:49508
+Oct 18 11:39 : client: [74] closed
+Oct 18 11:39 : client: [75] opened from 127.0.0.1:49518
+Oct 18 11:42 : client: [76] opened from 127.0.0.1:49564
+Oct 18 11:42 : client: [76] closed
+Oct 18 11:45 : player: played "Maurice Ravel/02 Ma Mère L_Oie_ II. Laideronnette, Impératrice Des Pagodes.mp3"
+Oct 18 11:51 : client: [75] closed
+Oct 18 11:51 : client: [77] opened from 127.0.0.1:49654
+Oct 18 11:54 : client: [77] closed
+Oct 18 11:54 : client: [78] opened from 127.0.0.1:49666
+Oct 18 11:54 : client: [78] closed
+Oct 18 11:54 : client: [79] opened from 127.0.0.1:49668
+Oct 18 12:02 : client: [79] closed
+Oct 18 12:02 : client: [80] opened from 127.0.0.1:49770
+Oct 18 12:02 : client: [80] closed
+Oct 18 12:02 : client: [81] opened from 127.0.0.1:49772
+Oct 18 12:05 : client: [81] closed
+Oct 18 12:05 : client: [82] opened from 127.0.0.1:49778
+Oct 18 12:06 : client: [83] opened from 127.0.0.1:49780
+Oct 18 12:06 : client: [82] closed
+Oct 18 12:06 : client: [83] closed
+Oct 18 12:06 : client: [84] opened from 127.0.0.1:49786
+Oct 18 12:06 : client: [85] opened from 127.0.0.1:49788
+Oct 18 12:07 : client: [85] closed
+Oct 18 12:07 : client: [84] closed
+Oct 18 12:07 : client: [86] opened from 127.0.0.1:49792
+Oct 18 12:08 : client: [86] closed
+Oct 18 12:08 : client: [87] opened from 127.0.0.1:49796
+Oct 18 12:08 : client: [87] closed
+Oct 18 12:08 : client: [88] opened from 127.0.0.1:49798
+Oct 18 12:11 : client: [0] closed
+Oct 18 12:14 : client: [88] closed
+Oct 18 12:14 : client: [89] opened from 127.0.0.1:50342
+Oct 18 12:14 : client: [89] closed
+Oct 18 12:14 : client: [90] opened from 127.0.0.1:50344
+Oct 18 12:14 : client: [90] closed
+Oct 18 12:14 : client: [91] opened from 127.0.0.1:50346
+Oct 18 12:15 : client: [91] closed
+Oct 18 12:15 : client: [92] opened from 127.0.0.1:50348
+Oct 18 12:15 : client: [92] closed
+Oct 18 12:15 : client: [93] opened from 127.0.0.1:50350
+Oct 18 12:17 : client: [93] closed
+Oct 18 12:17 : client: [94] opened from 127.0.0.1:50360
+Oct 18 12:18 : client: [94] closed
+Oct 18 12:18 : client: [95] opened from 127.0.0.1:50362
+Oct 18 12:19 : client: [95] closed
+Oct 18 12:19 : client: [96] opened from 127.0.0.1:50364
+Oct 18 12:19 : client: [96] closed
+Oct 18 12:19 : client: [97] opened from 127.0.0.1:50370
+Oct 18 12:21 : client: [97] closed
+Oct 18 12:21 : client: [98] opened from 127.0.0.1:50372
+Oct 18 12:21 : client: [98] closed
+Oct 18 12:21 : client: [99] opened from 127.0.0.1:50374
+Oct 18 12:21 : client: [99] closed
+Oct 18 12:21 : client: [100] opened from 127.0.0.1:50378
+Oct 18 12:22 : client: [100] closed
+Oct 18 12:22 : client: [101] opened from 127.0.0.1:50388
+Oct 18 12:24 : client: [101] closed
+Oct 18 12:24 : client: [102] opened from 127.0.0.1:50398
+Oct 18 12:24 : client: [102] closed
+Oct 18 12:24 : client: [103] opened from 127.0.0.1:50400
+Oct 18 12:25 : client: [103] closed
+Oct 18 12:25 : client: [104] opened from 127.0.0.1:50402
+Oct 18 12:25 : client: [104] closed
+Oct 18 12:25 : client: [105] opened from 127.0.0.1:50404
+Oct 18 12:26 : client: [105] closed
+Oct 18 12:26 : client: [106] opened from 127.0.0.1:50406
+Oct 18 12:26 : client: [106] closed
+Oct 18 12:26 : client: [107] opened from 127.0.0.1:50410
+Oct 18 12:27 : client: [107] closed
+Oct 18 12:27 : client: [108] opened from 127.0.0.1:50412
+Oct 18 12:28 : client: [108] closed
+Oct 18 12:29 : client: [109] opened from 127.0.0.1:50418
+Oct 18 12:30 : client: [109] closed
+Oct 18 12:30 : client: [110] opened from 127.0.0.1:50420
+Oct 18 12:31 : client: [110] closed
+Oct 18 12:31 : client: [111] opened from 127.0.0.1:50422
+Oct 18 12:31 : client: [111] closed
+Oct 18 12:31 : client: [112] opened from 127.0.0.1:50424
+Oct 18 12:32 : client: [112] closed
+Oct 18 12:32 : client: [113] opened from 127.0.0.1:50442
+Oct 18 12:33 : client: [113] closed
+Oct 18 12:33 : client: [114] opened from 127.0.0.1:50444
+Oct 18 12:35 : client: [114] closed
+Oct 18 12:35 : client: [115] opened from 127.0.0.1:50446
+Oct 18 12:36 : client: [115] closed
+Oct 18 12:36 : client: [116] opened from 127.0.0.1:50448
+Oct 18 12:37 : client: [116] closed
+Oct 18 12:37 : client: [117] opened from 127.0.0.1:50450
+Oct 18 12:37 : client: [117] closed
+Oct 18 12:37 : client: [118] opened from 127.0.0.1:50454
+Oct 18 12:44 : client: [118] closed
+Oct 18 12:44 : client: [119] opened from 127.0.0.1:50510
+Oct 18 12:44 : client: [119] closed
+Oct 18 12:45 : client: [120] opened from 127.0.0.1:50512
+Oct 18 12:45 : client: [120] closed
+Oct 18 12:45 : client: [121] opened from 127.0.0.1:50514
+Oct 18 12:48 : client: [121] closed
+Oct 18 12:48 : client: [122] opened from 127.0.0.1:50642
+Oct 18 13:24 : client: [122] closed
+Oct 18 13:24 : client: [123] opened from 127.0.0.1:50704
+Oct 18 13:24 : client: [123] closed
+Oct 18 13:24 : client: [124] opened from 127.0.0.1:50706
+Oct 18 13:38 : player: played "Movies OST/blade runner/Vangelis - Blade Runner Soundtrack (Remastered 2017)-k3fz6CC45ok.mp3"
+Oct 18 13:52 : client: [124] closed
+Oct 18 13:52 : client: [125] opened from 127.0.0.1:51018
+Oct 18 13:52 : client: [125] closed
+Oct 18 13:52 : client: [126] opened from 127.0.0.1:51024
+Oct 18 14:05 : client: [126] closed
+Oct 18 14:05 : client: [127] opened from 127.0.0.1:51110
+Oct 18 14:06 : client: [127] closed
+Oct 18 14:06 : client: [128] opened from 127.0.0.1:51112
+Oct 18 14:07 : client: [129] opened from 127.0.0.1:51158
+Oct 18 14:07 : exception: avformat_open_input() failed: Invalid data found when processing input
+Oct 18 14:07 : exception: Failed to decode https://music.youtube.com/playlist?list=OLAK5uy_mrnj2r22D6_35cwuiDjlijGqkF-YbDVQ0
+Oct 18 14:07 : player: played "https://music.youtube.com/playlist?list=OLAK5uy_mrnj2r22D6_35cwuiDjlijGqkF-YbDVQ0"
+Oct 18 14:07 : exception: Failed to decode https://music.youtube.com/playlist?list=OLAK5uy_mrnj2r22D6_35cwuiDjlijGqkF-YbDVQ0
+Oct 18 14:07 : client: [129] closed
+Oct 18 14:15 : update: removing Movies OST/GITS/Ghost in the Shell Ambience - 6 Hour Long Ambient Edit, Compilation-aylxPWZOsDo.mp3
+Oct 18 14:15 : update: added Movies OST/GITS/GITS.mp3
+Oct 18 14:23 : update: removing chihei/Sora/Natsu-R5ggizyNdhc.mp3
+Oct 18 14:23 : update: added chihei/Sora/Natsu.mp3
+Oct 18 14:25 : update: removing chihei/Sora/Ana-3dPs0EpcFnI.mp3
+Oct 18 14:25 : update: added chihei/Sora/Ana.mp3
+Oct 18 14:25 : update: removing chihei/Sora/Ilse-qKs88zNaWVw.mp3
+Oct 18 14:25 : update: removing chihei/Sora/Kisa-GMGy1LcN0S0.mp3
+Oct 18 14:25 : update: removing chihei/Sora/Luisa-ZTvFd8QpKVc.mp3
+Oct 18 14:25 : update: added chihei/Sora/Ilse.mp3
+Oct 18 14:25 : update: added chihei/Sora/Kisa.mp3
+Oct 18 14:25 : update: added chihei/Sora/Luisa.mp3
+Oct 18 14:26 : update: removing Movies OST/blade runner/Vangelis - Blade Runner Soundtrack (Remastered 2017)-k3fz6CC45ok.mp3
+Oct 18 14:26 : update: added Movies OST/blade runner/Blade Runner Soundtrack .mp3
+Oct 18 14:26 : update: removing Movies OST/5th element/The Fifth Element (The Complete Score _ 20th Anniversary Edition 1997 Soundtrack)-usXI9rg_5rQ.mp3
+Oct 18 14:26 : update: added Movies OST/5th element/The Fifth Element.mp3
+Oct 18 14:26 : player: played "Maurice Ravel/Ravel - Le Tombeau de Couperin.m4a"
+Oct 18 14:27 : update: removing Meditation/Robert Rich   Perpetual  A Somnium Continuum 8h Complete Masterpiece 2014-sNwukK7Y8wQ.mp3
+Oct 18 14:27 : update: added Meditation/Robert Rich   Perpetual  A Somnium Continuum .mp3
+Oct 18 14:28 : update: removing Maurice Ravel/Maurice Ravel_ Ma mère l_Oye (suite).m4a
+Oct 18 14:28 : update: added Maurice Ravel/Maurice Ravel Ma mere l'oie.m4a
+Oct 18 14:28 : update: removing Maurice Ravel/Maurice Ravel Ma mere l'oie.m4a
+Oct 18 14:28 : update: added Maurice Ravel/01 Maurice Ravel Ma mere l'oie.m4a
+Oct 18 14:29 : client: [130] opened from 127.0.0.1:51274
+Oct 18 14:29 : client: [130] closed
+Oct 18 14:29 : client: [131] opened from 127.0.0.1:51276
+Oct 18 14:29 : client: [131] closed
+Oct 18 14:29 : client: [132] opened from 127.0.0.1:51278
+Oct 18 14:29 : client: [132] closed
+Oct 18 14:29 : client: [133] opened from 127.0.0.1:51280
+Oct 18 14:29 : client: [133] closed
+Oct 18 14:30 : client: [134] opened from 127.0.0.1:51284
+Oct 18 14:30 : client: [134] closed
+Oct 18 14:30 : update: removing Prince/_-68WFFRKHdzs.mp3
+Oct 18 14:30 : update: added Prince/prince  purple rain.mp3
+Oct 18 14:30 : client: [135] opened from 127.0.0.1:51286
+Oct 18 14:30 : client: [135] closed
+Oct 18 14:30 : client: [136] opened from 127.0.0.1:51288
+Oct 18 14:30 : client: [136] closed
+Oct 18 14:30 : client: [137] opened from 127.0.0.1:51290
+Oct 18 14:30 : client: [137] closed
+Oct 18 14:30 : client: [138] opened from 127.0.0.1:51292
+Oct 18 14:30 : client: [138] closed
+Oct 18 14:30 : client: [139] opened from 127.0.0.1:51294
+Oct 18 14:30 : client: [139] closed
+Oct 18 14:30 : client: [140] opened from 127.0.0.1:51296
+Oct 18 14:30 : client: [140] closed
+Oct 18 14:30 : client: [141] opened from 127.0.0.1:51298
+Oct 18 14:30 : client: [141] closed
+Oct 18 14:30 : client: [142] opened from 127.0.0.1:51300
+Oct 18 14:30 : client: [142] closed
+Oct 18 14:30 : client: [143] opened from 127.0.0.1:51302
+Oct 18 14:30 : client: [143] closed
+Oct 18 14:30 : client: [144] opened from 127.0.0.1:51304
+Oct 18 14:30 : client: [144] closed
+Oct 18 14:30 : client: [145] opened from 127.0.0.1:51306
+Oct 18 14:30 : client: [145] closed
+Oct 18 14:32 : update: updating Prince/prince  purple rain.mp3
+Oct 18 14:32 : update: updating Movies OST/GITS/GITS.mp3
+Oct 18 14:32 : update: updating Movies OST/blade runner/Blade Runner Soundtrack .mp3
+Oct 18 14:33 : player: played "chihei/over the moon/04 The Moon Reflecting On the Surface of the Ocean.mp3"
+Oct 18 14:34 : player: played "chihei/over the moon/06 A Quiet Pond.mp3"
+Oct 18 14:35 : update: removing chihei/Sora/Ana.mp3
+Oct 18 14:35 : update: added chihei/Sora/01 Ana.mp3
+Oct 18 14:35 : update: removing chihei/Sora/Ilse.mp3
+Oct 18 14:35 : update: added chihei/Sora/02 Ilse.mp3
+Oct 18 14:35 : update: removing chihei/Sora/Kisa.mp3
+Oct 18 14:35 : update: added chihei/Sora/03 Kisa.mp3
+Oct 18 14:35 : update: removing chihei/Sora/Luisa.mp3
+Oct 18 14:35 : update: added chihei/Sora/04 Luisa.mp3
+Oct 18 14:35 : update: removing chihei/Sora/Natsu.mp3
+Oct 18 14:35 : update: added chihei/Sora/05 Natsu.mp3
+Oct 18 14:36 : update: removing Movies OST/blade runner/Blade Runner Soundtrack .mp3
+Oct 18 14:36 : update: added Movies OST/blade runner/Blade Runner Original Soundtrack .mp3
+Oct 18 14:36 : update: updating Movies OST/5th element/The Fifth Element.mp3
+Oct 18 14:36 : update: updating Meditation/zen music.mp3
+Oct 18 14:36 : update: updating Meditation/Robert Rich   Perpetual  A Somnium Continuum .mp3
+Oct 18 14:37 : update: updating Maurice Ravel/04 Ma Mère L_Oie_ IV. Le Jardin Féerique.mp3
+Oct 18 14:37 : update: updating Maurice Ravel/03 Ma Mère L_Oie_ III. Les Entretiens de la Belle Et de la Bête.mp3
+Oct 18 14:37 : update: updating Maurice Ravel/02 Ma Mère L_Oie_ II. Laideronnette, Impératrice Des Pagodes.mp3
+Oct 18 14:38 : update: updating chihei/Sora/05 Natsu.mp3
+Oct 18 14:38 : update: updating chihei/Sora/03 Kisa.mp3
+Oct 18 14:38 : update: updating chihei/Sora/04 Luisa.mp3
+Oct 18 14:38 : update: updating chihei/Sora/01 Ana.mp3
+Oct 18 14:38 : update: updating chihei/Sora/02 Ilse.mp3
+Oct 18 14:38 : player: played "chihei/over the moon/07 The Distant Sound of a Bustle.mp3"
+Oct 18 14:39 : update: updating chihei/Sora/01 Ana.mp3
+Oct 18 14:40 : client: [146] opened from 127.0.0.1:51342
+Oct 18 14:40 : client: [146] closed
+Oct 18 14:45 : player: played "chihei/over the moon/10 Haze From the River.mp3"
+Oct 18 14:48 : player: played "chihei/over the moon/11 The Dance of the Sea.mp3"
+Oct 18 14:55 : update: updating Prince/_-YxzRi4cjVRA.mp3
+Oct 18 14:56 : player: played "chihei/Ghostly Garden/01 Shadows.mp3"
+Oct 18 14:57 : client: [147] opened from 127.0.0.1:51414
+Oct 18 14:57 : client: [147] closed
+Oct 18 14:57 : client: [148] opened from 127.0.0.1:51416
+Oct 18 14:57 : client: [148] closed
+Oct 18 14:57 : client: [149] opened from 127.0.0.1:51418
+Oct 18 14:57 : client: [149] closed
+Oct 18 14:57 : client: [150] opened from 127.0.0.1:51420
+Oct 18 14:57 : client: [150] closed
+Oct 18 14:57 : client: [151] opened from 127.0.0.1:51422
+Oct 18 14:57 : client: [151] closed
+Oct 18 14:58 : client: [152] opened from 127.0.0.1:51424
+Oct 18 14:58 : client: [152] closed
+Oct 18 14:58 : client: [153] opened from 127.0.0.1:51426
+Oct 18 14:58 : client: [153] closed
+Oct 18 14:58 : update: updating Prince/_-8vg3Hj8r9GE.mp3
+Oct 18 14:58 : update: updating Prince/_-j8UpxD6Onco.mp3
+Oct 18 14:58 : update: updating Prince/_-S6Y1gohk5-A.mp3
+Oct 18 14:58 : update: updating Prince/_-UXEjSs-oEY0.mp3
+Oct 18 14:58 : update: updating Prince/_-weUhBGA8mxo.mp3
+Oct 18 14:58 : update: removing chihei/Ghostly Garden/01 Shadows.mp3
+Oct 18 14:58 : update: removing chihei/Ghostly Garden/02 Voices.mp3
+Oct 18 14:58 : update: removing chihei/Ghostly Garden/03 Cave.mp3
+Oct 18 14:58 : update: removing chihei/Ghostly Garden/04 Slight Trail.mp3
+Oct 18 14:58 : update: removing chihei/Ghostly Garden/05 Voices II.mp3
+Oct 18 14:58 : update: removing chihei/Ghostly Garden/06 Stone Wall Island.mp3
+Oct 18 14:58 : update: removing chihei/Ghostly Garden/07 Sacred Flowers.mp3
+Oct 18 14:58 : update: removing chihei/Ghostly Garden/08 Ghostly Garden.mp3
+Oct 18 14:58 : update: added chihei/Ghostly Garden/01 - Shadows.mp3
+Oct 18 14:58 : update: added chihei/Ghostly Garden/02 - Voices.mp3
+Oct 18 14:58 : update: added chihei/Ghostly Garden/03 - Cave.mp3
+Oct 18 14:58 : update: added chihei/Ghostly Garden/04 - Slight Trail.mp3
+Oct 18 14:58 : update: added chihei/Ghostly Garden/05 - Voices II.mp3
+Oct 18 14:58 : update: added chihei/Ghostly Garden/06 - Stone Wall Island.mp3
+Oct 18 14:58 : update: added chihei/Ghostly Garden/07 - Sacred Flowers.mp3
+Oct 18 14:58 : update: added chihei/Ghostly Garden/08 - Ghostly Garden.mp3
+Oct 18 14:58 : update: removing chihei/over the moon/01 Morning Arrive On the Island.mp3
+Oct 18 14:58 : update: removing chihei/over the moon/03 Confession.mp3
+Oct 18 14:58 : update: removing chihei/over the moon/04 The Moon Reflecting On the Surface of the Ocean.mp3
+Oct 18 14:58 : update: removing chihei/over the moon/06 A Quiet Pond.mp3
+Oct 18 14:58 : update: removing chihei/over the moon/07 The Distant Sound of a Bustle.mp3
+Oct 18 14:58 : update: removing chihei/over the moon/08 Calm.mp3
+Oct 18 14:58 : update: removing chihei/over the moon/10 Haze From the River.mp3
+Oct 18 14:58 : update: removing chihei/over the moon/11 The Dance of the Sea.mp3
+Oct 18 14:58 : update: added chihei/over the moon/01 - Morning Arrive on the Island.mp3
+Oct 18 14:58 : update: added chihei/over the moon/02 - Waves.mp3
+Oct 18 14:58 : update: added chihei/over the moon/03 - Confession.mp3
+Oct 18 14:58 : update: added chihei/over the moon/04 - the Moon Reflecting on the Surface of the Ocean.mp3
+Oct 18 14:58 : update: added chihei/over the moon/05 - Within New Trees.mp3
+Oct 18 14:58 : update: added chihei/over the moon/06 - a Quiet Pond.mp3
+Oct 18 14:58 : update: added chihei/over the moon/07 - the Distant Sound of a Bustle.mp3
+Oct 18 14:58 : update: added chihei/over the moon/08 - Calm.mp3
+Oct 18 14:58 : update: removing Akira Yamaoka/Silent Hill 2 Original Soundtracks/15 Magdalene.mp3
+Oct 18 14:58 : update: added Akira Yamaoka/Silent Hill 2 Original Soundtracks/09 - White Light.mp3
+Oct 18 14:59 : client: [128] closed
+Oct 18 14:59 : client: [154] opened from 127.0.0.1:51430
+Oct 18 14:59 : client: [154] closed
+Oct 18 14:59 : client: [155] opened from 127.0.0.1:51432
+Oct 18 15:02 : client: [155] closed
+Oct 18 15:02 : client: [156] opened from 127.0.0.1:51440
+Oct 18 15:02 : client: [156] closed
+Oct 18 15:02 : client: [157] opened from 127.0.0.1:51442
+Oct 18 15:02 : client: [157] closed
+Oct 18 15:02 : client: [158] opened from 127.0.0.1:51444
+Oct 18 15:03 : client: [158] closed
+Oct 18 15:03 : client: [159] opened from 127.0.0.1:51446
+Oct 18 15:03 : client: [159] closed
+Oct 18 15:03 : client: [160] opened from 127.0.0.1:51448
+Oct 18 15:03 : client: [160] closed
+Oct 18 15:03 : client: [161] opened from 127.0.0.1:51450
+Oct 18 15:04 : client: [161] closed
+Oct 18 15:04 : client: [162] opened from 127.0.0.1:51452
+Oct 18 15:04 : client: [162] closed
+Oct 18 15:04 : client: [163] opened from 127.0.0.1:51468
+Oct 18 15:11 : client: [164] opened from 127.0.0.1:51502
+Oct 18 15:13 : client: [165] opened from 127.0.0.1:51532
+Oct 18 15:13 : player: played "Maurice Ravel/Ravel - Le Tombeau de Couperin.m4a"
+Oct 18 15:13 : client: [165] closed
+Oct 18 15:13 : client: [166] opened from 127.0.0.1:51536
+Oct 18 15:13 : client: [166] closed
+Oct 18 15:15 : player: played "chihei/over the moon/08 - Calm.mp3"
+Oct 18 15:20 : client: [163] closed
+Oct 18 15:27 : client: [167] opened from 127.0.0.1:51574
+Oct 18 15:27 : client: [167] closed
+Oct 18 15:28 : client: [168] opened from 127.0.0.1:51576
+Oct 18 15:28 : client: [168] closed
+Oct 18 15:28 : client: [169] opened from 127.0.0.1:51578
+Oct 18 15:29 : client: [169] closed
+Oct 18 15:29 : client: [170] opened from 127.0.0.1:51582
+Oct 18 15:29 : client: [170] closed
+Oct 18 15:29 : client: [171] opened from 127.0.0.1:51584
+Oct 18 15:29 : client: [171] closed
+Oct 18 15:29 : client: [172] opened from 127.0.0.1:51586
+Oct 18 15:29 : client: [172] closed
+Oct 18 15:29 : client: [173] opened from 127.0.0.1:51588
+Oct 18 15:30 : client: [173] closed
+Oct 18 15:30 : client: [174] opened from 127.0.0.1:51590
+Oct 18 15:30 : client: [175] opened from 127.0.0.1:51594
+Oct 18 15:30 : client: [175] closed
+Oct 18 15:31 : client: [174] closed
+Oct 18 15:31 : client: [176] opened from 127.0.0.1:51596
+Oct 18 15:31 : client: [176] closed
+Oct 18 15:31 : client: [177] opened from 127.0.0.1:51598
+Oct 18 15:32 : client: [177] closed
+Oct 18 15:32 : client: [178] opened from 127.0.0.1:51602
+Oct 18 15:32 : client: [178] closed
+Oct 18 15:32 : client: [179] opened from 127.0.0.1:51604
+Oct 18 15:32 : client: [179] closed
+Oct 18 15:32 : client: [180] opened from 127.0.0.1:51606
+Oct 18 15:33 : client: [180] closed
+Oct 18 15:33 : client: [181] opened from 127.0.0.1:51608
+Oct 18 15:33 : player: played "chihei/over the moon/01 - Morning Arrive on the Island.mp3"
+Oct 18 15:33 : client: [181] closed
+Oct 18 15:33 : client: [182] opened from 127.0.0.1:51610
+Oct 18 15:36 : client: [182] closed
+Oct 18 15:36 : client: [183] opened from 127.0.0.1:51636
+Oct 18 15:37 : client: [183] closed
+Oct 18 15:37 : client: [184] opened from 127.0.0.1:51640
+Oct 18 15:37 : client: [184] closed
+Oct 18 15:37 : client: [185] opened from 127.0.0.1:51642
+Oct 18 15:37 : player: played "chihei/over the moon/02 - Waves.mp3"
+Oct 18 15:39 : client: [185] closed
+Oct 18 15:41 : client: [186] opened from 127.0.0.1:51648
+Oct 18 15:42 : player: played "chihei/over the moon/03 - Confession.mp3"
+Oct 18 15:43 : client: [186] closed
+Oct 18 15:43 : client: [187] opened from 127.0.0.1:51652
+Oct 18 15:43 : client: [187] closed
+Oct 18 15:43 : client: [188] opened from 127.0.0.1:51654
+Oct 18 15:43 : client: [188] closed
+Oct 18 15:43 : client: [189] opened from 127.0.0.1:51656
+Oct 18 15:43 : client: [189] closed
+Oct 18 15:43 : client: [190] opened from 127.0.0.1:51658
+Oct 18 15:44 : client: [190] closed
+Oct 18 15:44 : client: [191] opened from 127.0.0.1:51660
+Oct 18 15:44 : client: [191] closed
+Oct 18 15:44 : client: [192] opened from 127.0.0.1:51662
+Oct 18 15:44 : client: [192] closed
+Oct 18 15:44 : client: [193] opened from 127.0.0.1:51664
+Oct 18 15:46 : player: played "chihei/over the moon/04 - the Moon Reflecting on the Surface of the Ocean.mp3"
+Oct 18 15:47 : player: played "chihei/over the moon/05 - Within New Trees.mp3"
+Oct 18 15:47 : client: [193] closed
+Oct 18 15:47 : client: [194] opened from 127.0.0.1:51704
+Oct 18 15:47 : client: [194] closed
+Oct 18 15:47 : client: [195] opened from 127.0.0.1:51706
+Oct 18 15:48 : client: [195] closed
+Oct 18 15:48 : client: [196] opened from 127.0.0.1:51708
+Oct 18 15:48 : client: [196] closed
+Oct 18 15:48 : client: [197] opened from 127.0.0.1:51710
+Oct 18 15:48 : client: [197] closed
+Oct 18 15:48 : client: [198] opened from 127.0.0.1:51712
+Oct 18 15:50 : player: played "chihei/over the moon/06 - a Quiet Pond.mp3"
+Oct 18 15:51 : client: [198] closed
+Oct 18 15:52 : client: [199] opened from 127.0.0.1:51714
+Oct 18 15:52 : client: [199] closed
+Oct 18 15:53 : client: [200] opened from 127.0.0.1:51718
+Oct 18 15:53 : client: [200] closed
+Oct 18 15:53 : client: [201] opened from 127.0.0.1:51720
+Oct 18 15:53 : client: [201] closed
+Oct 18 15:53 : client: [202] opened from 127.0.0.1:51722
+Oct 18 15:54 : client: [202] closed
+Oct 18 15:54 : client: [203] opened from 127.0.0.1:51724
+Oct 18 15:54 : client: [203] closed
+Oct 18 15:54 : client: [204] opened from 127.0.0.1:51726
+Oct 18 15:57 : player: played "chihei/over the moon/07 - the Distant Sound of a Bustle.mp3"
+Oct 18 15:59 : player: played "chihei/over the moon/08 - Calm.mp3"
+Oct 18 20:31 : client: [204] closed
+Oct 18 20:31 : client: [205] opened from 127.0.0.1:52930
+Oct 18 20:31 : client: [205] closed
+Oct 18 20:31 : client: [206] opened from 127.0.0.1:52932
+Oct 18 20:32 : client: [206] closed
+Oct 20 08:51 : exception: RTIOThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 20 08:51 : client: [0] opened from 127.0.0.1:38530
+Oct 20 08:51 : client: [1] opened from 127.0.0.1:38534
+Oct 20 08:51 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 20 08:51 : exception: OutputThread could not get realtime scheduling, continuing anyway: sched_setscheduler failed: Operation not permitted
+Oct 20 08:52 : client: [0] closed
+Oct 20 08:52 : client: [2] opened from 127.0.0.1:38552
+Oct 20 08:52 : client: [2] closed
+Oct 20 08:52 : client: [3] opened from 127.0.0.1:38554
+Oct 20 08:52 : client: [3] closed
+Oct 20 08:52 : client: [4] opened from 127.0.0.1:38556
+Oct 20 08:54 : player: played "chihei/over the moon/01 - Morning Arrive on the Island.mp3"
+Oct 20 08:56 : exception: avformat_open_input() failed: Invalid data found when processing input
+Oct 20 08:56 : exception: Failed to decode https://music.youtube.com/playlist?list=OLAK5uy_mrnj2r22D6_35cwuiDjlijGqkF-YbDVQ0
+Oct 20 08:56 : player: played "https://music.youtube.com/playlist?list=OLAK5uy_mrnj2r22D6_35cwuiDjlijGqkF-YbDVQ0"
+Oct 20 08:56 : exception: Failed to decode https://music.youtube.com/playlist?list=OLAK5uy_mrnj2r22D6_35cwuiDjlijGqkF-YbDVQ0
+Oct 20 08:56 : exception: avformat_open_input() failed: Invalid data found when processing input
+Oct 20 08:56 : exception: Failed to decode https://music.youtube.com/watch?v=Cq0e1eDp_9k&feature=share
+Oct 20 08:56 : player: played "https://music.youtube.com/watch?v=Cq0e1eDp_9k&feature=share"
+Oct 20 08:56 : exception: avformat_open_input() failed: Invalid data found when processing input
+Oct 20 08:56 : exception: Failed to decode https://music.youtube.com/playlist?list=OLAK5uy_ngAcjKs5NOR7ewFoFY0me2UP2KHXoC8YM
+Oct 20 08:56 : player: played "https://music.youtube.com/playlist?list=OLAK5uy_ngAcjKs5NOR7ewFoFY0me2UP2KHXoC8YM"
+Oct 20 08:56 : exception: avformat_open_input() failed: Invalid data found when processing input
+Oct 20 08:56 : exception: Failed to decode https://music.youtube.com/playlist?list=PLJJOwc1A2xN_kil38dW8PZvP3X0EWKO1h
+Oct 20 08:56 : player: played "https://music.youtube.com/playlist?list=PLJJOwc1A2xN_kil38dW8PZvP3X0EWKO1h"
+Oct 20 08:56 : exception: avformat_open_input() failed: Invalid data found when processing input
+Oct 20 08:56 : exception: Failed to decode https://music.youtube.com/playlist?list=PLJJOwc1A2xN-cwKEbXzP1CvAyMDO4PJOX
+Oct 20 08:56 : player: played "https://music.youtube.com/playlist?list=PLJJOwc1A2xN-cwKEbXzP1CvAyMDO4PJOX"
+Oct 20 08:56 : exception: avformat_open_input() failed: Invalid data found when processing input
+Oct 20 08:56 : exception: Failed to decode https://music.youtube.com/playlist?list=OLAK5uy_nQMANO4dr_ybk_aMilIbKKR0mFNNHx2xU
+Oct 20 08:56 : player: played "https://music.youtube.com/playlist?list=OLAK5uy_nQMANO4dr_ybk_aMilIbKKR0mFNNHx2xU"
+Oct 20 08:56 : exception: avformat_open_input() failed: Invalid data found when processing input
+Oct 20 08:56 : exception: Failed to decode https://music.youtube.com/playlist?list=OLAK5uy_mrnj2r22D6_35cwuiDjlijGqkF-YbDVQ0
+Oct 20 08:56 : player: played "https://music.youtube.com/playlist?list=OLAK5uy_mrnj2r22D6_35cwuiDjlijGqkF-YbDVQ0"
+Oct 20 08:56 : exception: avformat_open_input() failed: Invalid data found when processing input
+Oct 20 08:56 : exception: Failed to decode https://music.youtube.com/playlist?list=OLAK5uy_ngAcjKs5NOR7ewFoFY0me2UP2KHXoC8YM
+Oct 20 08:56 : player: played "https://music.youtube.com/playlist?list=OLAK5uy_ngAcjKs5NOR7ewFoFY0me2UP2KHXoC8YM"
+Oct 20 08:56 : exception: avformat_open_input() failed: Invalid data found when processing input
+Oct 20 08:56 : exception: Failed to decode https://music.youtube.com/playlist?list=PLU4ktq2pWONv473C_Y3IFP4e9x6o3dSw0
+Oct 20 08:56 : player: played "https://music.youtube.com/playlist?list=PLU4ktq2pWONv473C_Y3IFP4e9x6o3dSw0"
+Oct 20 08:56 : exception: avformat_open_input() failed: Invalid data found when processing input
+Oct 20 08:56 : exception: Failed to decode https://music.youtube.com/playlist?list=PLOEAs04auvietkxFG-8hjc80IIVBItX2r
+Oct 20 08:56 : player: played "https://music.youtube.com/playlist?list=PLOEAs04auvietkxFG-8hjc80IIVBItX2r"
+Oct 20 08:56 : exception: avformat_open_input() failed: Invalid data found when processing input
+Oct 20 08:56 : exception: Failed to decode https://music.youtube.com/playlist?list=PLPA3vHjMfPERsPKz2gKwNpxAyIvW96s7-
+Oct 20 08:56 : player: played "https://music.youtube.com/playlist?list=PLPA3vHjMfPERsPKz2gKwNpxAyIvW96s7-"
+Oct 20 08:56 : exception: avformat_open_input() failed: Invalid data found when processing input
+Oct 20 08:56 : exception: Failed to decode https://music.youtube.com/playlist?list=OLAK5uy_neLURwHRNsWnZouMq5K_vGitaXhlKEr4g
+Oct 20 08:56 : player: played "https://music.youtube.com/playlist?list=OLAK5uy_neLURwHRNsWnZouMq5K_vGitaXhlKEr4g"
+Oct 20 08:56 : exception: avformat_open_input() failed: Invalid data found when processing input
+Oct 20 08:56 : exception: Failed to decode https://music.youtube.com/playlist?list=OLAK5uy_mlZa8Lsr_mNkYfrYynkfQE1ZyamvGWY3A
+Oct 20 08:56 : player: played "https://music.youtube.com/playlist?list=OLAK5uy_mlZa8Lsr_mNkYfrYynkfQE1ZyamvGWY3A"
+Oct 20 08:56 : exception: avformat_open_input() failed: Invalid data found when processing input
+Oct 20 08:56 : exception: Failed to decode https://music.youtube.com/playlist?list=OLAK5uy_kcIZ_U5fzztF3Y8dD4YNyqwSLD0nX-AGc
+Oct 20 08:56 : player: played "https://music.youtube.com/playlist?list=OLAK5uy_kcIZ_U5fzztF3Y8dD4YNyqwSLD0nX-AGc"
+Oct 20 08:56 : exception: avformat_open_input() failed: Invalid data found when processing input
+Oct 20 08:56 : exception: Failed to decode https://music.youtube.com/playlist?list=OLAK5uy_mrnj2r22D6_35cwuiDjlijGqkF-YbDVQ0
+Oct 20 08:56 : player: played "https://music.youtube.com/playlist?list=OLAK5uy_mrnj2r22D6_35cwuiDjlijGqkF-YbDVQ0"
+Oct 20 08:56 : exception: avformat_open_input() failed: Invalid data found when processing input
+Oct 20 08:56 : exception: Failed to decode https://music.youtube.com/watch?v=Cq0e1eDp_9k&feature=share
+Oct 20 08:56 : player: played "https://music.youtube.com/watch?v=Cq0e1eDp_9k&feature=share"
+Oct 20 08:56 : exception: avformat_open_input() failed: Invalid data found when processing input
+Oct 20 08:56 : exception: Failed to decode https://music.youtube.com/playlist?list=OLAK5uy_ngAcjKs5NOR7ewFoFY0me2UP2KHXoC8YM
+Oct 20 08:56 : player: played "https://music.youtube.com/playlist?list=OLAK5uy_ngAcjKs5NOR7ewFoFY0me2UP2KHXoC8YM"
+Oct 20 08:56 : exception: avformat_open_input() failed: Invalid data found when processing input
+Oct 20 08:56 : exception: Failed to decode https://music.youtube.com/playlist?list=PLJJOwc1A2xN_kil38dW8PZvP3X0EWKO1h
+Oct 20 08:56 : player: played "https://music.youtube.com/playlist?list=PLJJOwc1A2xN_kil38dW8PZvP3X0EWKO1h"
+Oct 20 08:56 : exception: avformat_open_input() failed: Invalid data found when processing input
+Oct 20 08:56 : exception: Failed to decode https://music.youtube.com/playlist?list=PLJJOwc1A2xN-cwKEbXzP1CvAyMDO4PJOX
+Oct 20 08:56 : player: played "https://music.youtube.com/playlist?list=PLJJOwc1A2xN-cwKEbXzP1CvAyMDO4PJOX"
+Oct 20 08:56 : exception: avformat_open_input() failed: Invalid data found when processing input
+Oct 20 08:56 : exception: Failed to decode https://music.youtube.com/playlist?list=OLAK5uy_nQMANO4dr_ybk_aMilIbKKR0mFNNHx2xU
+Oct 20 08:56 : player: played "https://music.youtube.com/playlist?list=OLAK5uy_nQMANO4dr_ybk_aMilIbKKR0mFNNHx2xU"
+Oct 20 08:56 : exception: avformat_open_input() failed: Invalid data found when processing input
+Oct 20 08:56 : exception: Failed to decode https://music.youtube.com/playlist?list=OLAK5uy_mrnj2r22D6_35cwuiDjlijGqkF-YbDVQ0
+Oct 20 08:56 : player: played "https://music.youtube.com/playlist?list=OLAK5uy_mrnj2r22D6_35cwuiDjlijGqkF-YbDVQ0"
+Oct 20 08:56 : exception: avformat_open_input() failed: Invalid data found when processing input
+Oct 20 08:56 : exception: Failed to decode https://music.youtube.com/playlist?list=OLAK5uy_ngAcjKs5NOR7ewFoFY0me2UP2KHXoC8YM
+Oct 20 08:56 : player: played "https://music.youtube.com/playlist?list=OLAK5uy_ngAcjKs5NOR7ewFoFY0me2UP2KHXoC8YM"
+Oct 20 08:56 : exception: avformat_open_input() failed: Invalid data found when processing input
+Oct 20 08:56 : exception: Failed to decode https://music.youtube.com/playlist?list=PLU4ktq2pWONv473C_Y3IFP4e9x6o3dSw0
+Oct 20 08:56 : player: played "https://music.youtube.com/playlist?list=PLU4ktq2pWONv473C_Y3IFP4e9x6o3dSw0"
+Oct 20 08:56 : exception: avformat_open_input() failed: Invalid data found when processing input
+Oct 20 08:56 : exception: Failed to decode https://music.youtube.com/playlist?list=PLOEAs04auvietkxFG-8hjc80IIVBItX2r
+Oct 20 08:56 : player: played "https://music.youtube.com/playlist?list=PLOEAs04auvietkxFG-8hjc80IIVBItX2r"
+Oct 20 08:56 : exception: avformat_open_input() failed: Invalid data found when processing input
+Oct 20 08:56 : exception: Failed to decode https://music.youtube.com/playlist?list=PLPA3vHjMfPERsPKz2gKwNpxAyIvW96s7-
+Oct 20 08:56 : player: played "https://music.youtube.com/playlist?list=PLPA3vHjMfPERsPKz2gKwNpxAyIvW96s7-"
+Oct 20 08:56 : exception: avformat_open_input() failed: Invalid data found when processing input
+Oct 20 08:56 : exception: Failed to decode https://music.youtube.com/playlist?list=OLAK5uy_neLURwHRNsWnZouMq5K_vGitaXhlKEr4g
+Oct 20 08:56 : player: played "https://music.youtube.com/playlist?list=OLAK5uy_neLURwHRNsWnZouMq5K_vGitaXhlKEr4g"
+Oct 20 08:56 : exception: avformat_open_input() failed: Invalid data found when processing input
+Oct 20 08:56 : exception: Failed to decode https://music.youtube.com/playlist?list=OLAK5uy_mlZa8Lsr_mNkYfrYynkfQE1ZyamvGWY3A
+Oct 20 08:56 : player: played "https://music.youtube.com/playlist?list=OLAK5uy_mlZa8Lsr_mNkYfrYynkfQE1ZyamvGWY3A"
+Oct 20 08:56 : exception: avformat_open_input() failed: Invalid data found when processing input
+Oct 20 08:56 : exception: Failed to decode https://music.youtube.com/playlist?list=OLAK5uy_kcIZ_U5fzztF3Y8dD4YNyqwSLD0nX-AGc
+Oct 20 08:56 : player: played "https://music.youtube.com/playlist?list=OLAK5uy_kcIZ_U5fzztF3Y8dD4YNyqwSLD0nX-AGc"
+Oct 20 08:56 : exception: avformat_open_input() failed: Invalid data found when processing input
+Oct 20 08:56 : exception: Failed to decode https://music.youtube.com/playlist?list=OLAK5uy_kcIZ_U5fzztF3Y8dD4YNyqwSLD0nX-AGc
+Oct 20 08:56 : player: played "https://music.youtube.com/playlist?list=OLAK5uy_kcIZ_U5fzztF3Y8dD4YNyqwSLD0nX-AGc"
+Oct 20 08:59 : client: [5] opened from 127.0.0.1:38688
+Oct 20 08:59 : player: played "Maurice Ravel/01 Maurice Ravel Ma mere l'oie.m4a"
+Oct 20 08:59 : client: [5] closed
+Oct 20 09:05 : exception: Unsupported URI scheme
+Oct 20 09:06 : exception: Unsupported URI scheme
+Oct 20 09:07 : exception: Unsupported URI scheme
+Oct 20 09:19 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 09:31 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 09:44 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 09:56 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 10:08 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 10:20 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 10:32 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 10:44 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 10:57 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 11:07 : client: [4] closed
+Oct 20 11:07 : client: [6] opened from 127.0.0.1:40032
+Oct 20 11:07 : client: [6] closed
+Oct 20 11:07 : client: [7] opened from 127.0.0.1:40034
+Oct 20 11:09 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 11:21 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 11:33 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 11:45 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 11:58 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 12:10 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 12:22 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 12:34 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 12:46 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 12:58 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 13:11 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 13:23 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 13:35 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 13:47 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 13:59 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 14:12 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 14:24 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 14:36 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 14:48 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 15:00 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 15:12 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 15:25 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 15:37 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 15:49 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 15:50 : client: [7] closed
+Oct 20 15:50 : client: [8] opened from 127.0.0.1:40400
+Oct 20 15:50 : client: [8] closed
+Oct 20 15:50 : client: [9] opened from 127.0.0.1:40402
+Oct 20 16:01 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 16:13 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 16:25 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 16:38 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 16:50 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 17:02 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 17:14 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 17:26 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 17:39 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 17:51 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 18:03 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 18:15 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 18:27 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 18:39 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 18:52 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 19:04 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 19:16 : client: [9] closed
+Oct 20 19:16 : client: [10] opened from 127.0.0.1:40964
+Oct 20 19:16 : client: [10] closed
+Oct 20 19:16 : client: [11] opened from 127.0.0.1:40970
+Oct 20 19:16 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 19:28 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 19:40 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 19:52 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 20:05 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 20:17 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 20:29 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 20:41 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 20:53 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 21:06 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 21:18 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 21:30 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 21:42 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 21:54 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 22:06 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 22:19 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 22:31 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 22:43 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 22:55 : client: [11] closed
+Oct 20 22:55 : client: [12] opened from 127.0.0.1:41298
+Oct 20 22:55 : client: [12] closed
+Oct 20 22:55 : client: [13] opened from 127.0.0.1:41300
+Oct 20 22:55 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 20 23:07 : player: played "chihei/Sora/01 Ana.mp3"
+Oct 21 00:02 : client: [13] closed
+Oct 21 00:02 : client: [14] opened from 127.0.0.1:41640
+Oct 21 00:02 : client: [14] closed
+Oct 21 00:02 : client: [15] opened from 127.0.0.1:41648
+Oct 21 00:02 : client: [16] opened from 127.0.0.1:41654
+Oct 21 00:02 : client: [16] closed
